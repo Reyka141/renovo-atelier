@@ -1,0 +1,25 @@
+{
+  "HomePage": {
+    "title": "Добро пожаловать в Renovo Atelier",
+    "description": "Next.js приложение с интернационализацией",
+    "getStarted": "Начните с редактирования",
+    "saveChanges": "Сохраните и сразу увидите изменения",
+    "deployNow": "Развернуть сейчас",
+    "readDocs": "Читать документацию",
+    "learnMore": "Узнать больше о Next.js"
+  },
+  "Navigation": {
+    "home": "Главная",
+    "about": "О нас",
+    "contact": "Контакты"
+  },
+  "LanguageSwitcher": {
+    "language": "Язык",
+    "english": "English",
+    "russian": "Русский"
+  },
+  "Metadata": {
+    "title": "Renovo Atelier - Творческая мастерская",
+    "description": "Современная мастерская для творческих проектов на Next.js"
+  }
+} 
