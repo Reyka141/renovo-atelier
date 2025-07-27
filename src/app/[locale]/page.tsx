@@ -71,6 +71,7 @@ export default async function HomePage({ params }: HomePageProps) {
 
                 <footer className="text-center text-sm text-gray-500 dark:text-gray-400 mt-8">
                     <p>{t("learnMore")}</p>
+                    <p>{t("contactUs")}</p>
                 </footer>
             </main>
         </div>

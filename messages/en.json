@@ -6,7 +6,8 @@
     "saveChanges": "Save and see your changes instantly",
     "deployNow": "Deploy now",
     "readDocs": "Read our docs",
-    "learnMore": "Learn more about Next.js"
+    "learnMore": "Learn more about Next.js",
+    "contactUs": "Contact us"
   },
   "Navigation": {
     "home": "Home",
@@ -22,4 +23,4 @@
     "title": "Renovo Atelier - Creative Workshop",
     "description": "Modern workshop for creative projects with Next.js"
   }
-} 
+}
