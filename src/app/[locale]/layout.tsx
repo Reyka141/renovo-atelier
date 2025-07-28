@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "../globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -59,6 +60,21 @@ export default async function LocaleLayout({
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
+                {/* EmailJS инициализация */}
+                <Script
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+                    strategy="beforeInteractive"
+                />
+                <Script id="emailjs-init" strategy="beforeInteractive">
+                    {`
+                        (function(){
+                            emailjs.init({
+                                publicKey: "AxX5jN7jJ0WvIXgtB",
+                            });
+                        })();
+                    `}
+                </Script>
+
                 <NextIntlClientProvider messages={messages}>
                     {children}
                 </NextIntlClientProvider>
