@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { LanguageSwitcher } from "@/components/language-switcher";
 import { CounterStoreProvider } from "@/providers/counter-store-provider";
-import { Counter } from "@/components/counter";
-import { CounterIndicator } from "@/components/counter-indicator";
+import { Counter, CounterIndicator } from "@/components/business/counter";
+import { LanguageSwitcher } from "@/components";
 
 interface HomePageProps {
     params: Promise<{ locale: string }>;

@@ -1,8 +1,8 @@
 "use client";
 
+import { useStore } from "@/hooks";
 import { useCounterStore } from "@/providers/counter-store-provider";
-import useStore from "@/hooks/use-store";
-import type { CounterStore } from "@/stores/counter-store";
+import { CounterStore } from "@/types";
 
 export const Counter = () => {
     // Используем кастомный хук для корректной работы с persist в Next.js

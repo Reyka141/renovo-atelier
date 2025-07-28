@@ -1,20 +1,6 @@
 import { createStore } from 'zustand/vanilla'
 import { persist, createJSONStorage } from 'zustand/middleware'
-
-// Типы для состояния счетчика
-export type CounterState = {
-    count: number
-}
-
-// Типы для действий счетчика
-export type CounterActions = {
-    incrementCount: () => void
-    decrementCount: () => void
-    resetCount: () => void
-}
-
-// Объединенный тип store
-export type CounterStore = CounterState & CounterActions
+import type { CounterStore, CounterState } from '../../types'
 
 // Начальное состояние по умолчанию
 export const defaultInitState: CounterState = {

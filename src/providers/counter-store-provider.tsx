@@ -7,7 +7,7 @@ import {
     type CounterStore,
     createCounterStore,
     defaultInitState,
-} from "@/stores/counter-store";
+} from "../stores";
 
 // Тип для API store
 export type CounterStoreApi = ReturnType<typeof createCounterStore>;
