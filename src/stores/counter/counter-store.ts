@@ -21,6 +21,7 @@ export const createCounterStore = (
                 decrementCount: () => set((state) => ({ count: state.count - 1 })),
                 // Сбросить счетчик к 0
                 resetCount: () => set({ count: 0 }),
+                setCount: (count: number) => set({ count }),
             }),
             {
                 name: 'counter-storage', // уникальное имя для localStorage

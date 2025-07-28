@@ -5,8 +5,7 @@
 // Общие типы
 export * from './common';
 
-// API типы
-export * from './api';
+
 
 // Store типы
 export * from './store';

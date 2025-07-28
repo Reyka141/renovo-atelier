@@ -31,7 +31,7 @@ export const isValidPassword = (password: string): boolean => {
 };
 
 // Проверка на пустоту
-export const isEmpty = (value: any): boolean => {
+export const isEmpty = (value: unknown): boolean => {
     if (value === null || value === undefined) return true;
     if (typeof value === 'string') return value.trim().length === 0;
     if (Array.isArray(value)) return value.length === 0;

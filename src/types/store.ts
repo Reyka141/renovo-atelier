@@ -3,7 +3,6 @@
  */
 
 import { AsyncState, Locale, Theme } from './common';
-import { API } from './api';
 
 // Состояние счетчика
 export interface CounterState {
@@ -21,14 +20,20 @@ export interface CounterStore extends CounterState, CounterActions { }
 
 // Состояние пользователя
 export interface UserState {
-    user: AsyncState<API.User>;
+    order: AsyncState<Order>;
     isAuthenticated: boolean;
 }
 
+export interface Order {
+    id: string;
+}
+
 export interface UserActions {
-    setUser: (user: API.User) => void;
-    clearUser: () => void;
-    updateProfile: (data: Partial<API.User>) => Promise<void>;
+    setOrder: (order: Order) => void;
+    updateOrder: (order: Order) => void;
+    deleteOrder: (orderId: string) => void;
+    deleteAllOrders: () => void;
+    getAllOrders: () => Order[];
 }
 
 export interface UserStore extends UserState, UserActions { }

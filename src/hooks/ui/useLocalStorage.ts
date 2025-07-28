@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 /**
  * Хук для работы с localStorage с синхронизацией состояния
@@ -23,7 +23,7 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
         try {
             const valueToStore = value instanceof Function ? value(storedValue) : value
             setStoredValue(valueToStore)
-            
+
             if (typeof window !== 'undefined') {
                 window.localStorage.setItem(key, JSON.stringify(valueToStore))
             }
