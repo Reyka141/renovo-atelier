@@ -7,5 +7,28 @@
     "i18n-ally.sourceLanguage": "ru",
     "i18n-ally.defaultNamespace": "common",
     "i18n-ally.extract.autoDetect": true,
-    "i18n-ally.review.enabled": true
+    "i18n-ally.review.enabled": true,
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+        "source.fixAll": "explicit",
+        "source.addMissingImports": "explicit"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "eslint.rules.customizations": [
+        {
+            "rule": "no-unused-vars",
+            "severity": "warn"
+        }
+    ],
+    "workbench.editor.wrapTabs": true,
 }
