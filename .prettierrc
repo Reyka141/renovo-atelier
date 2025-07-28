@@ -1,5 +1,11 @@
 {
   "plugins": ["prettier-plugin-tailwindcss"],
   "tailwindFunctions": ["clsx", "cn", "cva"],
-  "tailwindAttributes": ["className", "class"]
+  "tailwindAttributes": ["className", "class"],
+  "semi": true,
+  "printWidth": 120,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "tabWidth": 4,
+  "arrowParens": "always"
 } 

@@ -1,18 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
 // Кастомный хук для корректной работы с persist в Next.js
-const useStore = <T, F>(
-    store: (callback: (state: T) => unknown) => unknown,
-    callback: (state: T) => F,
-) => {
-    const result = store(callback) as F
-    const [data, setData] = useState<F>()
+const useStore = <T, F>(store: (callback: (state: T) => unknown) => unknown, callback: (state: T) => F) => {
+    const result = store(callback) as F;
+    const [data, setData] = useState<F>();
 
     useEffect(() => {
-        setData(result)
-    }, [result])
+        setData(result);
+    }, [result]);
 
-    return data
-}
+    return data;
+};
 
-export default useStore 
+export default useStore;

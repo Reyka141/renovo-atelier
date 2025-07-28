@@ -16,7 +16,7 @@ export interface CounterActions {
     setCount: (count: number) => void;
 }
 
-export interface CounterStore extends CounterState, CounterActions { }
+export interface CounterStore extends CounterState, CounterActions {}
 
 // Состояние пользователя
 export interface UserState {
@@ -36,7 +36,7 @@ export interface UserActions {
     getAllOrders: () => Order[];
 }
 
-export interface UserStore extends UserState, UserActions { }
+export interface UserStore extends UserState, UserActions {}
 
 // Состояние приложения
 export interface AppState {
@@ -51,11 +51,11 @@ export interface AppActions {
     initialize: () => void;
 }
 
-export interface AppStore extends AppState, AppActions { }
+export interface AppStore extends AppState, AppActions {}
 
 // Общий тип для всех stores
 export interface RootStore {
     counter: CounterStore;
     user: UserStore;
     app: AppStore;
-} 
+}

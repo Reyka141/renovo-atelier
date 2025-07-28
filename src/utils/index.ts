@@ -9,4 +9,4 @@ export * from './formatting';
 export * from './validation';
 
 // Вспомогательные утилиты
-export * from './helpers'; 
+export * from './helpers';

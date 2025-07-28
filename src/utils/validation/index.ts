@@ -49,4 +49,4 @@ export const isValidLength = (str: string, min: number, max?: number): boolean =
     const length = str.length;
     if (max === undefined) return length >= min;
     return length >= min && length <= max;
-}; 
+};

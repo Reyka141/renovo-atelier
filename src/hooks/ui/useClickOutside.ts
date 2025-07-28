@@ -1,25 +1,23 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react';
 
 /**
  * Хук для обработки кликов вне элемента
  */
-export function useClickOutside<T extends HTMLElement = HTMLElement>(
-    handler: () => void
-) {
-    const ref = useRef<T>(null)
+export function useClickOutside<T extends HTMLElement = HTMLElement>(handler: () => void) {
+    const ref = useRef<T>(null);
 
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (ref.current && !ref.current.contains(event.target as Node)) {
-                handler()
+                handler();
             }
-        }
+        };
 
-        document.addEventListener('mousedown', handleClickOutside)
+        document.addEventListener('mousedown', handleClickOutside);
         return () => {
-            document.removeEventListener('mousedown', handleClickOutside)
-        }
-    }, [handler])
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [handler]);
 
-    return ref
-} 
+    return ref;
+}

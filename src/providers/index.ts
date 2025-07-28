@@ -7,4 +7,4 @@ export { AppProvider } from './app-provider';
 
 // Отдельные провайдеры
 export { CounterStoreProvider, useCounterStore } from './counter-store-provider';
-export type { CounterStoreProviderProps } from './counter-store-provider'; 
+export type { CounterStoreProviderProps } from './counter-store-provider';

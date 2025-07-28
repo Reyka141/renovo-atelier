@@ -8,5 +8,5 @@ export const config = {
     // - API маршрутов (/api)
     // - статических файлов (_next)
     // - файлов с расширениями (.ico, .png, etc.)
-    matcher: '/((?!api|_next|_vercel|.*\\..*).*)'
-}; 
+    matcher: '/((?!api|_next|_vercel|.*\\..*).*)',
+};

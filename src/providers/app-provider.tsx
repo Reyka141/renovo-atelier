@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { ReactNode } from "react";
-import { CounterStoreProvider } from "./counter-store-provider";
+import { ReactNode } from 'react';
+import { CounterStoreProvider } from './counter-store-provider';
 
 interface AppProviderProps {
     children: ReactNode;
@@ -21,4 +21,4 @@ export const AppProvider = ({ children }: AppProviderProps) => {
             {/* </UserStoreProvider> */}
         </CounterStoreProvider>
     );
-}; 
+};

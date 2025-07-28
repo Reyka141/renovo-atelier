@@ -5,7 +5,7 @@
 // Debounce функция
 export const debounce = <T extends (...args: unknown[]) => unknown>(
     func: T,
-    wait: number
+    wait: number,
 ): ((...args: Parameters<T>) => void) => {
     let timeout: NodeJS.Timeout;
 
@@ -18,7 +18,7 @@ export const debounce = <T extends (...args: unknown[]) => unknown>(
 // Throttle функция
 export const throttle = <T extends (...args: unknown[]) => unknown>(
     func: T,
-    limit: number
+    limit: number,
 ): ((...args: Parameters<T>) => void) => {
     let inThrottle: boolean;
 
@@ -26,7 +26,7 @@ export const throttle = <T extends (...args: unknown[]) => unknown>(
         if (!inThrottle) {
             func.apply(this, args);
             inThrottle = true;
-            setTimeout(() => inThrottle = false, limit);
+            setTimeout(() => (inThrottle = false), limit);
         }
     };
 };
@@ -45,10 +45,10 @@ export const generateId = (length: number = 8): string => {
 export const deepClone = <T>(obj: T): T => {
     if (obj === null || typeof obj !== 'object') return obj;
     if (obj instanceof Date) return new Date(obj.getTime()) as T;
-    if (obj instanceof Array) return obj.map(item => deepClone(item)) as T;
+    if (obj instanceof Array) return obj.map((item) => deepClone(item)) as T;
     if (typeof obj === 'object') {
         const cloned = {} as T;
-        Object.keys(obj).forEach(key => {
+        Object.keys(obj).forEach((key) => {
             (cloned as Record<string, unknown>)[key] = deepClone((obj as Record<string, unknown>)[key]);
         });
         return cloned;
@@ -58,7 +58,7 @@ export const deepClone = <T>(obj: T): T => {
 
 // Задержка (Promise)
 export const delay = (ms: number): Promise<void> => {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
 // Получить значение из объекта по пути
@@ -91,4 +91,4 @@ export const isTablet = (): boolean => {
 export const isDesktop = (): boolean => {
     if (typeof window === 'undefined') return false;
     return window.innerWidth > 1024;
-}; 
+};

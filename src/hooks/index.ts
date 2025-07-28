@@ -9,4 +9,4 @@ export * from './state';
 export * from './ui';
 
 // Data hooks (пока пустые)
-// export * from './data'; 
+// export * from './data';

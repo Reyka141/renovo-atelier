@@ -9,4 +9,4 @@ export * from './routes';
 export * from './ui';
 
 // Конфигурация
-export * from './config'; 
+export * from './config';

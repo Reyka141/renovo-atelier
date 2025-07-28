@@ -54,4 +54,4 @@ export const ERROR_MESSAGES = {
     forbidden: 'Недостаточно прав доступа.',
     notFound: 'Запрашиваемый ресурс не найден.',
     serverError: 'Ошибка сервера. Попробуйте позже.',
-} as const; 
+} as const;

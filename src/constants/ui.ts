@@ -70,4 +70,4 @@ export const COLORS = {
         500: '#f59e0b',
         600: '#d97706',
     },
-} as const; 
+} as const;

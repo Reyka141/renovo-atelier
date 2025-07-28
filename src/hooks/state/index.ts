@@ -1,1 +1,1 @@
-export { default as useStore } from './use-store'; 
+export { default as useStore } from './use-store';

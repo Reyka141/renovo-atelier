@@ -56,4 +56,4 @@ export interface LanguageSwitcherProps extends BaseComponentProps {
     currentLocale?: string;
     availableLocales?: string[];
     onLocaleChange?: (locale: string) => void;
-} 
+}
