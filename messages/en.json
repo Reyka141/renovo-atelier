@@ -23,5 +23,13 @@
   "Metadata": {
     "title": "Renovo Atelier - Creative Workshop",
     "description": "Modern workshop for creative projects with Next.js"
+  },
+  "Header": {
+    "services": "Services",
+    "about": "About Us",
+    "examples": "Examples",
+    "reviews": "Reviews",
+    "faq": "Answers to questions",
+    "contacts": "Contacts"
   }
 }

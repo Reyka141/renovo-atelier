@@ -23,5 +23,13 @@
   "Metadata": {
     "title": "Renovo Atelier - Творческая мастерская",
     "description": "Современная мастерская для творческих проектов на Next.js"
+  },
+  "Header": {
+    "examples": "Примеры",
+    "reviews": "Отзывы",
+    "faq": "Ответы на вопросы",
+    "contacts": "Контакты",
+    "services": "Услуги\n",
+    "about": "О нас"
   }
 }

@@ -2,19 +2,15 @@ import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Viaoda_Libre } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import '../globals.css';
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
+const viaodaLibre = Viaoda_Libre({
+    variable: '--font-viaoda-libre',
     subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
-    subsets: ['latin'],
+    weight: '400',
 });
 
 // Генерируем статические параметры для всех локалей
@@ -50,7 +46,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
     return (
         <html lang={locale} data-scroll-behavior="smooth">
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+            <body className={`${viaodaLibre.variable} antialiased`}>
                 {/* EmailJS инициализация */}
                 <Script
                     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"

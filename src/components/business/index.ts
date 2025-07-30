@@ -3,3 +3,6 @@ export * from './counter';
 
 // Экспорт language компонентов
 export * from './language';
+
+// Экспорт header компонентов
+export * from './Header';
