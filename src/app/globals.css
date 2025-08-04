@@ -181,6 +181,28 @@ svg * {
     }
 }
 
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    color: inherit;
+
+    &:hover {
+        color: var(--color-brown);
+    }
+    
+    &[class] {
+        text-decoration: none;
+    }
+}
+
 /* Цвета  */
 :root {
     --black: #212A30;
@@ -198,9 +220,15 @@ svg * {
 @theme inline {
     --color-background: var(--white);
     --color-foreground: var(--black);
-    --font-viaoda: var(--font-viaoda-libre);
+    --font-secondary: var(--font-viaoda-libre);
+    --font-primary: var(--font-lato);
     --container-width: var(--container-width);
     --container-padding-x: var(--container-padding-x);
+
+    --color-white: var(--white);
+    --color-black: var(--black);
+    --color-gray: var(--gray);
+    --color-brown: var(--brown);
 }
 
 
@@ -208,7 +236,10 @@ svg * {
 body {
     background: var(--white);
     color: var(--black);
-    font-family: var(--font-viaoda), sans-serif;
+    font-family:  var(--font-lato), sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 .container {
@@ -216,3 +247,6 @@ body {
     margin-inline: auto;
     padding-inline: var(--container-padding-x);
 }
+
+
+

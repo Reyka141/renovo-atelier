@@ -2,7 +2,7 @@ import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-import { Viaoda_Libre } from 'next/font/google';
+import { Lato, Viaoda_Libre } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import Script from 'next/script';
 import '../globals.css';
@@ -11,6 +11,12 @@ const viaodaLibre = Viaoda_Libre({
     variable: '--font-viaoda-libre',
     subsets: ['latin'],
     weight: '400',
+});
+
+const lato = Lato({
+    variable: '--font-lato',
+    subsets: ['latin'],
+    weight: ['400', '300'],
 });
 
 // Генерируем статические параметры для всех локалей
@@ -46,7 +52,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
     return (
         <html lang={locale} data-scroll-behavior="smooth">
-            <body className={`${viaodaLibre.variable} antialiased`}>
+            <body className={`${viaodaLibre.variable} ${lato.variable} antialiased`}>
                 {/* EmailJS инициализация */}
                 <Script
                     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
