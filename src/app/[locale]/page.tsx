@@ -1,12 +1,8 @@
-import { Header } from '@/components/business/Header';
-import { getTranslations } from 'next-intl/server';
+import { Header } from '@/components/business';
 
 export default async function HomePage() {
-    // Получаем переводы для Server Component
-    const t = await getTranslations('HomePage');
-
     return (
-        <div className='bg-white'>
+        <div className="bg-white">
             <Header />
         </div>
     );

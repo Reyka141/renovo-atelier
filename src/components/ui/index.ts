@@ -1,12 +1,9 @@
-// Экспорт button компонентов
-export * from './buttons';
-
-// Экспорт feedback компонентов
-export * from './feedback';
-
-// Экспорт link компонентов
-export * from './link';
+// Экспорт UI-компонентов явным образом, без листовых index.ts
+export { Button } from './buttons/Button';
+export type { ButtonProps } from './buttons/Button';
+export { LoadingSpinner } from './feedback/LoadingSpinner';
+export type { LoadingSpinnerProps } from './feedback/LoadingSpinner';
+export { Link } from './link/Link';
 
 // Здесь будут добавляться другие UI компоненты:
-// export * from './forms';
-// export * from './layout';
+// export { Input } from './forms/Input';

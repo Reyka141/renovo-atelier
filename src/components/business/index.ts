@@ -1,8 +1,6 @@
-// Экспорт counter компонентов
-export * from './counter';
-
-// Экспорт language компонентов
-export * from './language';
-
-// Экспорт header компонентов
-export * from './Header';
+// Экспорт бизнес-компонентов явным образом, без листовых index.ts
+export { Counter } from './counter/counter';
+export { CounterIndicator } from './counter/counter-indicator';
+export { Header } from './Header/Header';
+export { LanguageSwitcher } from './language/language-switcher';
+export { Burger } from './Burger/Burger';

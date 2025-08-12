@@ -16,7 +16,7 @@ const languageOptions: LanguageOption[] = [
     { code: 'ru', name: 'Русский', flag: 'Ru' },
 ];
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ className }: { className?: string }) {
     const t = useTranslations('LanguageSwitcher');
     const locale = useLocale();
     const router = useRouter();
@@ -32,7 +32,7 @@ export function LanguageSwitcher() {
     };
 
     return (
-        <div className="relative">
+        <div className={`relative ${className}`}>
             {/* Кнопка переключения */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
