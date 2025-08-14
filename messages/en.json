@@ -34,5 +34,14 @@
   },
   "Hero": {
     "subtitle": "We give a new life to your clothes"
+  },
+  "OurServices": {
+    "title": "Our services",
+    "all": "All services",
+    "Clothing Repair": "Clothing repair",
+    "Custom Tailoring": "Individual sewing",
+    "Alteration & Restoration": "Alteration & Restoration",
+    "Embroidery & Decor": "Embroidery & Decor",
+    "fromPrice": "from {price} zł"
   }
 }

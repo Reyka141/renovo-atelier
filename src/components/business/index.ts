@@ -5,3 +5,5 @@ export { Header } from './Header/Header';
 export { LanguageSwitcher } from './language/language-switcher';
 export { Burger } from './Burger/Burger';
 export { Hero } from './Hero/Hero';
+export { OurServices } from './OurServices/OurServices';
+export { ProductCard } from './ProductCard/ProductCard';

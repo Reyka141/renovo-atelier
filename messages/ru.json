@@ -34,5 +34,14 @@
   },
   "Hero": {
     "subtitle": "Дарим новую жизнь вашей одежде"
+  },
+  "OurServices": {
+    "all": "Все услуги",
+    "Clothing Repair": "Ремонт одежды",
+    "title": "Наши услуги",
+    "Custom Tailoring": "Индивидуальный пошив",
+    "Alteration & Restoration": "Перешив и реставрация",
+    "Embroidery & Decor": "Вышивка и декор",
+    "fromPrice": "от {price} zł"
   }
 }

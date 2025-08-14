@@ -4,6 +4,8 @@ export type { ButtonProps } from './Button/Button';
 export { LoadingSpinner } from './feedback/LoadingSpinner';
 export type { LoadingSpinnerProps } from './feedback/LoadingSpinner';
 export { Link } from './link/Link';
+export { HStack } from './Stack/HStack/HStack';
+export { VStack } from './Stack/VStack/VStack';
 
 // Здесь будут добавляться другие UI компоненты:
 // export { Input } from './forms/Input';

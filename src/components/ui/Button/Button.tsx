@@ -1,35 +1,37 @@
 import React from 'react';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: 'primary' | 'secondary' | 'danger' | 'success';
-    size?: 'sm' | 'md' | 'lg';
+    variant?: 'primary' | 'secondary' | 'danger' | 'success' | 'clear';
+    size?: 'sm' | 'md' | 'lg' | 'clear';
     isLoading?: boolean;
     children: React.ReactNode;
 }
 
 export const Button: React.FC<ButtonProps> = ({
     variant = 'primary',
-    size = 'md',
+    size = 'clear',
     isLoading = false,
     children,
     className = '',
     disabled,
     ...props
 }) => {
-    const baseClasses =
-        'font-semibold rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2';
+    const baseClasses = 'font-normal';
 
     const variantClasses = {
-        primary: 'bg-blue-600 hover:bg-blue-700 text-white focus:ring-blue-500',
+        primary:
+            'bg-transparent border border-black hover:bg-transparent hover:text-brown text-black focus:ring-transparent',
         secondary: 'bg-gray-500 hover:bg-gray-600 text-white focus:ring-gray-500',
         danger: 'bg-red-500 hover:bg-red-600 text-white focus:ring-red-500',
         success: 'bg-green-500 hover:bg-green-600 text-white focus:ring-green-500',
+        clear: 'bg-transparent hover:bg-transparent hover:text-brown text-black focus:ring-transparent',
     };
 
     const sizeClasses = {
-        sm: 'px-3 py-1.5 text-sm',
+        sm: 'p-3 leading-[110%] ',
         md: 'px-6 py-3',
         lg: 'px-8 py-4 text-lg',
+        clear: 'px-0 py-0',
     };
 
     const finalClassName = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
