@@ -6,6 +6,7 @@ export default async function HomePage() {
             <Header />
             <main>
                 <Hero />
+                <Hero />
             </main>
         </div>
     );
