@@ -32,7 +32,7 @@ const links = [
 export async function Header() {
     const t = await getTranslations('Header');
     return (
-        <header className="border-brown mx-auto flex h-[78px] max-w-[var(--container-width)] items-center justify-between border-b bg-black">
+        <header className="border-brown container flex h-[78px] items-center justify-between border-b  fixed top-0 left-0 right-0 z-50">
             <Link href="/">
                 <Image src={'/header/logo.svg'} alt="logo" width={120} height={24} />
             </Link>

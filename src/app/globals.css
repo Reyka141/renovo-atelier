@@ -66,15 +66,7 @@ p:where(:not([class]):not(:last-child)) {
     margin-bottom: var(--paragraphMarginBottom);
 }
 
-/**
-    Упрощаем работу с изображениями и видео
-   */
-img,
-video {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
 
 /**
     Наследуем свойства шрифт для полей ввода
@@ -236,10 +228,9 @@ a {
 body {
     background: var(--white);
     color: var(--black);
-    font-family:  var(--font-lato), sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 150%;
+    
+
+    @apply md:text-xl font-normal font-primary leading-[150%] text-base;
 }
 
 .container {

@@ -1,9 +1,12 @@
-import { Header } from '@/components/business';
+import { Header, Hero } from '@/components/business';
 
 export default async function HomePage() {
     return (
         <div className="bg-white">
             <Header />
+            <main>
+                <Hero />
+            </main>
         </div>
     );
 }

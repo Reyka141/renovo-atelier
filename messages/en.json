@@ -31,5 +31,8 @@
     "reviews": "Reviews",
     "faq": "Answers to questions",
     "contacts": "Contacts"
+  },
+  "Hero": {
+    "subtitle": "We give a new life to your clothes"
   }
 }

@@ -1,6 +1,6 @@
 // Экспорт UI-компонентов явным образом, без листовых index.ts
-export { Button } from './buttons/Button';
-export type { ButtonProps } from './buttons/Button';
+export { Button } from './Button/Button';
+export type { ButtonProps } from './Button/Button';
 export { LoadingSpinner } from './feedback/LoadingSpinner';
 export type { LoadingSpinnerProps } from './feedback/LoadingSpinner';
 export { Link } from './link/Link';
