@@ -1,4 +1,9 @@
 import card1 from '@/assets/ourServices/card1.png';
+import card10 from '@/assets/ourServices/card10.png';
+import card11 from '@/assets/ourServices/card11.png';
+import card12 from '@/assets/ourServices/card12.png';
+import card13 from '@/assets/ourServices/card13.png';
+import card14 from '@/assets/ourServices/card14.png';
 import card2 from '@/assets/ourServices/card2.png';
 import card3 from '@/assets/ourServices/card3.png';
 import card4 from '@/assets/ourServices/card4.png';
@@ -7,11 +12,6 @@ import card6 from '@/assets/ourServices/card6.png';
 import card7 from '@/assets/ourServices/card7.png';
 import card8 from '@/assets/ourServices/card8.png';
 import card9 from '@/assets/ourServices/card9.png';
-import card10 from '@/assets/ourServices/card10.png';
-import card11 from '@/assets/ourServices/card11.png';
-import card12 from '@/assets/ourServices/card12.png';
-import card13 from '@/assets/ourServices/card13.png';
-import card14 from '@/assets/ourServices/card14.png';
 import { Button, HStack, VStack } from '@/components/ui';
 import cn from 'classnames';
 import { getTranslations } from 'next-intl/server';
@@ -21,7 +21,7 @@ import { ProductCard } from '../ProductCard/ProductCard';
 interface OurServicesProps {
     className?: string;
 }
-
+// TODO: добавить переводы
 const products = [
     {
         image: card1,
@@ -84,7 +84,7 @@ const products = [
         price: '25',
     },
     {
-        image: card13   ,
+        image: card13,
         title: 'Украшение кружевом',
         price: '30',
     },
