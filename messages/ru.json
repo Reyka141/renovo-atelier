@@ -42,6 +42,20 @@
     "Custom Tailoring": "Индивидуальный пошив",
     "Alteration & Restoration": "Перешив и реставрация",
     "Embroidery & Decor": "Вышивка и декор",
-    "fromPrice": "от {price} zł"
+    "fromPrice": "от {price} zł",
+    "zipperReplacement": "Замена молнии",
+    "shorteningPantsSkirt": "Укорачивание брюк/юбки",
+    "shorteningSleeves": "Укорачивание рукавов",
+    "dressJacketFitting": "Подгонка платья/пиджака",
+    "repairHolesRips": "Устранение дыр/разрывов",
+    "skirtSewing": "Пошив юбки",
+    "simpleDressSewing": "Пошив простого платья",
+    "mensShirtSewing": "Пошив мужской рубашки",
+    "styleModernization": "Модернизация фасона",
+    "hardwareDecorReplacement": "Замена фурнитуры/декора",
+    "oldItemRedesign": "Перешив старой вещи",
+    "machineryEmbroidery": "Машинная вышивка",
+    "laceDecoration": "Украшение кружевом",
+    "decorDecoration": "Украшение декором"
   }
 }

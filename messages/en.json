@@ -42,6 +42,20 @@
     "Custom Tailoring": "Individual sewing",
     "Alteration & Restoration": "Alteration & Restoration",
     "Embroidery & Decor": "Embroidery & Decor",
-    "fromPrice": "from {price} zł"
+    "fromPrice": "from {price} zł",
+    "zipperReplacement": "Zipper Replacement",
+    "shorteningPantsSkirt": "Pants/Skirt Shortening",
+    "shorteningSleeves": "Sleeve Shortening",
+    "dressJacketFitting": "Dress/Jacket Fitting",
+    "repairHolesRips": "Repair Holes/Rips",
+    "skirtSewing": "Skirt Sewing",
+    "simpleDressSewing": "Simple Dress Sewing",
+    "mensShirtSewing": "Men's Shirt Sewing",
+    "styleModernization": "Style Modernization",
+    "hardwareDecorReplacement": "Hardware/Decor Replacement",
+    "oldItemRedesign": "Old Item Redesign",
+    "machineryEmbroidery": "Machine Embroidery",
+    "laceDecoration": "Lace Decoration",
+    "decorDecoration": "Decor Decoration"
   }
 }

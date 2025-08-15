@@ -1,0 +1,54 @@
+import { Button, HStack } from '@/components/ui';
+import cn from 'classnames';
+import { useTranslations } from 'next-intl';
+import { FC } from 'react';
+import { ServiceType } from './types';
+
+interface FilterButtonsProps {
+    activeType: ServiceType;
+    onTypeChange: (type: ServiceType) => void;
+}
+
+export const FilterButtons: FC<FilterButtonsProps> = ({ activeType, onTypeChange }) => {
+    const t = useTranslations('OurServices');
+
+    return (
+        <HStack max justify="between" className="border-t border-b border-black p-6">
+            <Button
+                variant="clear"
+                onClick={() => onTypeChange('all')}
+                className={cn(activeType === 'all' && 'text-primary')}
+            >
+                {t('all')}
+            </Button>
+            <Button
+                variant="clear"
+                onClick={() => onTypeChange('Clothing Repair')}
+                className={cn(activeType === 'Clothing Repair' && 'text-primary')}
+            >
+                {t('Clothing Repair')}
+            </Button>
+            <Button
+                variant="clear"
+                onClick={() => onTypeChange('Custom Tailoring')}
+                className={cn(activeType === 'Custom Tailoring' && 'text-primary')}
+            >
+                {t('Custom Tailoring')}
+            </Button>
+            <Button
+                variant="clear"
+                onClick={() => onTypeChange('Alteration & Restoration')}
+                className={cn(activeType === 'Alteration & Restoration' && 'text-primary')}
+            >
+                {t('Alteration & Restoration')}
+            </Button>
+            <Button
+                variant="clear"
+                onClick={() => onTypeChange('Embroidery & Decor')}
+                className={cn(activeType === 'Embroidery & Decor' && 'text-primary')}
+            >
+                {t('Embroidery & Decor')}
+            </Button>
+        </HStack>
+    );
+};
