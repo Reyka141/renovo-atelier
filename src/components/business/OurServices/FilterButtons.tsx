@@ -17,35 +17,35 @@ export const FilterButtons: FC<FilterButtonsProps> = ({ activeType, onTypeChange
             <Button
                 variant="clear"
                 onClick={() => onTypeChange('all')}
-                className={cn(activeType === 'all' && 'text-primary')}
+                className={cn(activeType === 'all' && 'text-brown')}
             >
                 {t('all')}
             </Button>
             <Button
                 variant="clear"
                 onClick={() => onTypeChange('Clothing Repair')}
-                className={cn(activeType === 'Clothing Repair' && 'text-primary')}
+                className={cn(activeType === 'Clothing Repair' && 'text-brown')}
             >
                 {t('Clothing Repair')}
             </Button>
             <Button
                 variant="clear"
                 onClick={() => onTypeChange('Custom Tailoring')}
-                className={cn(activeType === 'Custom Tailoring' && 'text-primary')}
+                className={cn(activeType === 'Custom Tailoring' && 'text-brown')}
             >
                 {t('Custom Tailoring')}
             </Button>
             <Button
                 variant="clear"
                 onClick={() => onTypeChange('Alteration & Restoration')}
-                className={cn(activeType === 'Alteration & Restoration' && 'text-primary')}
-            >
+                className={cn(activeType === 'Alteration & Restoration' && 'text-brown')}
+            >   
                 {t('Alteration & Restoration')}
             </Button>
             <Button
                 variant="clear"
                 onClick={() => onTypeChange('Embroidery & Decor')}
-                className={cn(activeType === 'Embroidery & Decor' && 'text-primary')}
+                className={cn(activeType === 'Embroidery & Decor' && 'text-brown')}
             >
                 {t('Embroidery & Decor')}
             </Button>
