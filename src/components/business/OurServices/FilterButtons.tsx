@@ -7,13 +7,14 @@ import { ServiceType } from './types';
 interface FilterButtonsProps {
     activeType: ServiceType;
     onTypeChange: (type: ServiceType) => void;
+    className?: string;
 }
 
-export const FilterButtons: FC<FilterButtonsProps> = ({ activeType, onTypeChange }) => {
+export const FilterButtons: FC<FilterButtonsProps> = ({ activeType, onTypeChange, className }) => {
     const t = useTranslations('OurServices');
 
     return (
-        <HStack max justify="between" className="border-t border-b border-black p-6">
+        <HStack max justify="between" className={cn(className, 'border-t border-b border-black p-6')}>
             <Button
                 variant="clear"
                 onClick={() => onTypeChange('all')}

@@ -68,16 +68,6 @@ p:where(:not([class]):not(:last-child)) {
 
 
 
-/**
-    Наследуем свойства шрифт для полей ввода
-   */
-input,
-textarea,
-select,
-button {
-    font: inherit;
-}
-
 html {
     /**
       Пригодится в большинстве ситуаций
@@ -221,6 +211,9 @@ a {
     --color-black: var(--black);
     --color-gray: var(--gray);
     --color-brown: var(--brown);
+
+    --text-button: 1rem;
+    --text-button--line-height: 1.5rem;
 }
 
 
