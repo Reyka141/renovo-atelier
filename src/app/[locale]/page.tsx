@@ -4,7 +4,7 @@ export default async function HomePage() {
     return (
         <div className="bg-white">
             <Header />
-            <main className="flex flex-col 2xl:gap-28 xl:gap-16 gap-9">
+            <main className="flex flex-col gap-9 xl:gap-16 2xl:gap-28">
                 <Hero />
                 <OurServices />
             </main>

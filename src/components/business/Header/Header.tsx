@@ -32,7 +32,7 @@ const links = [
 export async function Header() {
     const t = await getTranslations('Header');
     return (
-        <header className="border-brown container flex h-[78px] items-center justify-between border-b  absolute top-0 left-0 right-0 z-50">
+        <header className="border-brown absolute top-0 right-0 left-0 z-50 container flex h-[78px] items-center justify-between border-b">
             <Link href="/">
                 <Image src={'/header/logo.svg'} alt="logo" width={120} height={24} />
             </Link>
@@ -43,8 +43,6 @@ export async function Header() {
                             <Link href={link.href}>{t(link.label)}</Link>
                         </li>
                     ))}
-                   
-                   
                 </ul>
             </nav>
             <div className="flex items-center gap-3 xl:gap-10">

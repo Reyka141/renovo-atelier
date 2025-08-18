@@ -40,7 +40,7 @@ export const FilterButtons: FC<FilterButtonsProps> = ({ activeType, onTypeChange
                 variant="clear"
                 onClick={() => onTypeChange('Alteration & Restoration')}
                 className={cn(activeType === 'Alteration & Restoration' && 'text-brown')}
-            >   
+            >
                 {t('Alteration & Restoration')}
             </Button>
             <Button

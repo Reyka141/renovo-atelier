@@ -66,8 +66,6 @@ p:where(:not([class]):not(:last-child)) {
     margin-bottom: var(--paragraphMarginBottom);
 }
 
-
-
 html {
     /**
       Пригодится в большинстве ситуаций
@@ -179,7 +177,7 @@ a {
     &:hover {
         color: var(--color-brown);
     }
-    
+
     &[class] {
         text-decoration: none;
     }
@@ -187,16 +185,15 @@ a {
 
 /* Цвета  */
 :root {
-    --black: #212A30;
-    --gray: #A4A4A4;
-    --brown: #DBC7A6;
-    --white: #FEFEFE;
+    --black: #212a30;
+    --gray: #a4a4a4;
+    --brown: #dbc7a6;
+    --white: #fefefe;
 
     --container-width: 1440px;
     --container-padding-x: 24px;
 
     --transition-duration: 0.2s;
-
 }
 
 @theme inline {
@@ -212,18 +209,21 @@ a {
     --color-gray: var(--gray);
     --color-brown: var(--brown);
 
-    --text-button: 1rem;
+    --text-button: 1.25rem;
     --text-button--line-height: 1.5rem;
+    --text-button-mobile: 1rem;
+    --text-button-mobile--line-height: 1.5rem;
+    --text-body-mobile: 1rem;
+    --text-body-mobile--line-height: 150%;
+    --text-body-desktop: 1.5rem;
+    --text-body-desktop--line-height: 150%;
 }
-
-
 
 body {
     background: var(--white);
     color: var(--black);
-    
 
-    @apply md:text-xl font-normal font-primary leading-[150%] text-base;
+    @apply lg:text-body-desktop font-primary text-body-mobile font-normal;
 }
 
 .container {
@@ -232,9 +232,7 @@ body {
     padding-inline: var(--container-padding-x);
 }
 
-
-
-/* From Uiverse.io by Cevorob */ 
+/* From Uiverse.io by Cevorob */
 .burger {
     position: relative;
     width: 40px;
@@ -242,13 +240,13 @@ body {
     background: transparent;
     cursor: pointer;
     display: block;
-  }
-  
-  .burger input {
+}
+
+.burger input {
     display: none;
-  }
-  
-  .burger span {
+}
+
+.burger span {
     display: block;
     position: absolute;
     height: 4px;
@@ -258,39 +256,39 @@ body {
     opacity: 1;
     left: 0;
     transform: rotate(0deg);
-    transition: .25s ease-in-out;
-  }
-  
-  .burger span:nth-of-type(1) {
+    transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
     top: 0px;
     transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(2) {
+}
+
+.burger span:nth-of-type(2) {
     top: 50%;
     transform: translateY(-50%);
     transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(3) {
+}
+
+.burger span:nth-of-type(3) {
     top: 100%;
     transform-origin: left center;
     transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
     transform: rotate(45deg);
     top: 0px;
     left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
     width: 0%;
     opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
     transform: rotate(-45deg);
     top: 28px;
     left: 5px;
-  }
+}

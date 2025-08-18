@@ -28,7 +28,6 @@ export const Burger: FC<BurgerProps> = (props) => {
                 </MenuButton>
                 <MenuItems
                     anchor="bottom end"
-                
                     className="border-brown absolute top-full right-0 z-50 mt-1 flex w-48 origin-top-right flex-col gap-2 overflow-hidden border bg-white p-4 shadow-lg"
                 >
                     {links.map((link) => (
@@ -38,7 +37,6 @@ export const Burger: FC<BurgerProps> = (props) => {
                             </Link>
                         </MenuItem>
                     ))}
-                   
                 </MenuItems>
             </Menu>
         </div>

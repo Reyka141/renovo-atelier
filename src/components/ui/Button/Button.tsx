@@ -28,7 +28,7 @@ export const Button: React.FC<ButtonProps> = ({
     };
 
     const sizeClasses = {
-        sm: 'p-3 leading-[110%] ',
+        sm: 'lg:p-3 p-2 text-button-mobile leading-[110%] lg:text-button',
         md: 'px-6 py-3',
         lg: 'px-8 py-4 text-lg',
         clear: 'px-0 py-0',

@@ -58,12 +58,12 @@ export function LanguageSwitcher({ className }: { className?: string }) {
                             key={lang.code}
                             onClick={() => handleLanguageChange(lang.code)}
                             className={`flex w-full items-center gap-3 px-4 py-3 text-left text-sm transition-colors duration-200 hover:bg-gray-50 ${
-                                locale === lang.code ? 'bg-blue-50 text-brown pointer-events-none' : 'text-gray-700'
+                                locale === lang.code ? 'text-brown pointer-events-none bg-blue-50' : 'text-gray-700'
                             }`}
                         >
                             <span>{lang.name}</span>
                             {locale === lang.code && (
-                                <svg className="ml-auto h-4 w-4 text-brown" fill="currentColor" viewBox="0 0 20 20">
+                                <svg className="text-brown ml-auto h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
                                     <path
                                         fillRule="evenodd"
                                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"

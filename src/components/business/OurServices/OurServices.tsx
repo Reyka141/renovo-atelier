@@ -31,7 +31,11 @@ export const OurServices: FC<OurServicesProps> = (props) => {
                     <h2 className="font-secondary pb-4 text-2xl md:text-4xl xl:border-b-0 xl:pb-0 xl:text-6xl">
                         {t('title')}
                     </h2>
-                    <ListBox className='xl:hidden' items={items} onChange={(item) => setActiveType(item as ServiceType)} />
+                    <ListBox
+                        className="xl:hidden"
+                        items={items}
+                        onChange={(item) => setActiveType(item as ServiceType)}
+                    />
                 </HStack>
 
                 <FilterButtons className="hidden xl:flex" activeType={activeType} onTypeChange={setActiveType} />
