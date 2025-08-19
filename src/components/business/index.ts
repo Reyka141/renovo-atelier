@@ -7,3 +7,5 @@ export { Burger } from './Burger/Burger';
 export { Hero } from './Hero/Hero';
 export { OurServices } from './OurServices/OurServices';
 export { ProductCard } from './ProductCard/ProductCard';
+export { AboutUs } from './AboutUs/AboutUs';
+export { FAQAnswers } from './FAQAnswers/FAQAnswers';

@@ -57,5 +57,18 @@
     "machineryEmbroidery": "Machine Embroidery",
     "laceDecoration": "Lace Decoration",
     "decorDecoration": "Decor Decoration"
+  },
+  "AboutUs": {
+    "title": "Renovo&atelier",
+    "description": "We are the company \"Technoservice\", which provides a wide range of services in IT and digital technologies. \nOur team of professionals is ready to help you with the development of software, the creation of websites and the implementation of innovative solutions for your business. \nWe strive for the quality and satisfaction of the needs of our customers."
+  },
+  "FAQAnswers": {
+    "title1": "Test question1",
+    "answer1": "Test text",
+    "title2": "Test question2",
+    "answer2": "Test answer2",
+    "title3": "Test question3",
+    "answer3": "Test answer3",
+    "title": "Answers to questions"
   }
 }
