@@ -31,7 +31,7 @@ export const ListBox: FC<ListBoxProps> = (props) => {
             <ListboxButton
                 ref={ref}
                 className={cn(
-                    'text-button flex items-center gap-2',
+                    'text-button-mobile md:text-button flex items-center gap-2',
                     'focus:not-data-focus:outline-none data-focus:outline-2 data-focus:-outline-offset-2 data-focus:outline-white/25',
                     className,
                 )}
@@ -45,7 +45,7 @@ export const ListBox: FC<ListBoxProps> = (props) => {
                     <ListboxOption
                         key={person.id}
                         value={person}
-                        className="text-button group data-focus:bg-brown/20 flex cursor-default items-center gap-2 rounded-lg px-3 py-1.5 select-none"
+                        className="text-button-mobile md:text-button group data-focus:bg-brown/20 flex cursor-default items-center gap-2 rounded-lg px-3 py-1.5 select-none"
                     >
                         {t(person.label)}
                     </ListboxOption>
