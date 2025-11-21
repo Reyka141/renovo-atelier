@@ -1,4 +1,4 @@
-import { AboutUs, FAQAnswers, Header, Hero, OurServices } from '@/components';
+import { AboutUs, FAQAnswers, Header, Hero, OurServices, OurWork } from '@/components';
 
 export default async function HomePage() {
     return (
@@ -6,9 +6,10 @@ export default async function HomePage() {
             <Header />
             <main className="flex flex-col gap-9 xl:gap-16 2xl:gap-28">
                 <Hero />
-                <OurServices />
-                <AboutUs />
-                <FAQAnswers />
+                {/* <OurServices /> */}
+                {/* <AboutUs /> */}
+                {/* <FAQAnswers /> */}
+                <OurWork />
             </main>
         </div>
     );

@@ -70,5 +70,8 @@
     "title3": "Test question3",
     "answer3": "Test answer3",
     "title": "Answers to questions"
+  },
+  "OurWork": {
+    "title": "Our works"
   }
 }

@@ -9,3 +9,4 @@ export { OurServices } from './OurServices/OurServices';
 export { ProductCard } from './ProductCard/ProductCard';
 export { AboutUs } from './AboutUs/AboutUs';
 export { FAQAnswers } from './FAQAnswers/FAQAnswers';
+export { OurWork } from './OurWork/OurWork';
