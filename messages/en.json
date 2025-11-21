@@ -73,5 +73,36 @@
   },
   "OurWork": {
     "title": "Our works"
+  },
+  "Feedback": {
+    "title": "Reviews",
+    "feedback1": {
+      "name": "Daria.A",
+      "date": "June 1,2025",
+      "stars": "5",
+      "text": "We are a company that provides a wide range of services in the field of IT and digital technologies. Our team of professionals is ready to help you with the development of software, the creation of websites and the implementation of innovative solutions for your business. We strive for the quality and satisfaction of the needs of our customers.",
+      "image": "/feedback/Feedback_1.jpg"
+    },
+    "feedback2": {
+      "name": "Daria.A",
+      "date": "December 10,2025",
+      "stars": "3",
+      "text": "We are a company that provides a wide range of services in the field of IT and digital technologies. Our team of professionals is ready to help you with the development of software, the creation of websites and the implementation of innovative solutions for your business. We strive for the quality and satisfaction of the needs of our customers.",
+      "image": "/feedback/Feedback_1.jpg"
+    },
+    "feedback3": {
+      "name": "Daria.A",
+      "date": "December 10,2025",
+      "stars": "3",
+      "text": "We are a company that provides a wide range of services in the field of IT and digital technologies. Our team of professionals is ready to help you with the development of software, the creation of websites and the implementation of innovative solutions for your business. We strive for the quality and satisfaction of the needs of our customers.",
+      "image": "/feedback/Feedback_1.jpg"
+    },
+    "feedback4": {
+      "name": "Daria.A",
+      "date": "December 10,2025",
+      "stars": "2",
+      "text": "We are a company that provides a wide range of services in the field of IT and digital technologies. Our team of professionals is ready to help you with the development of software, the creation of websites and the implementation of innovative solutions for your business. We strive for the quality and satisfaction of the needs of our customers.",
+      "image": "/feedback/Feedback_1.jpg"
+    }
   }
 }

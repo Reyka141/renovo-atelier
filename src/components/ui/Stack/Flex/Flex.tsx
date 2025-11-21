@@ -2,7 +2,7 @@ import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
 export type FlexJustify = 'start' | 'center' | 'end' | 'between';
 export type FlexAlign = 'start' | 'center' | 'end' | 'stretch';
 export type FlexDirection = 'row' | 'column';
-export type FlexGap = '2' | '4' | '6' | '16' | '24' | '32' | '64';
+export type FlexGap = '2' | '4' | '6' | '8' | '12' | '16' | '24' | '32' | '64';
 
 const justifyClasses: Record<FlexJustify, string> = {
     start: 'justify-start',
@@ -27,6 +27,8 @@ const gapClasses: Record<FlexGap, string> = {
     2: 'gap-0.5',
     4: 'gap-1', // gap-1 = 4px в Tailwind
     6: 'gap-1.5', // gap-2 = 8px в Tailwind
+    8: 'gap-2', // gap-2 = 8px в Tailwind
+    12: 'gap-3', // gap-3 = 12px в Tailwind
     16: 'gap-2 sm:gap-4', // gap-4 = 16px в Tailwind
     24: 'gap-3 sm:gap-6', // gap-6 = 24px в Tailwind
     32: 'gap-6 sm:gap-8', // gap-8 = 32px в Tailwind

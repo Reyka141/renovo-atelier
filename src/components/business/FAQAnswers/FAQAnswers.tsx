@@ -47,7 +47,7 @@ export const FAQAnswers: FC<FAQAnswersProps> = (props) => {
                 alt="about-us"
                 width={560}
                 height={764}
-                className="max-h-auto absolute top-0 left-0 hidden md:block md:max-w-43 xl:max-w-72 2xl:max-w-full"
+                className="max-h-auto absolute top-0 left-0 hidden md:block md:max-w-43 xl:max-w-72 2xl:max-w-full pointer-events-none"
             />
 
             <Image
@@ -55,7 +55,7 @@ export const FAQAnswers: FC<FAQAnswersProps> = (props) => {
                 alt="about-us"
                 width={560}
                 height={764}
-                className="max-h-auto absolute top-0 right-0 hidden md:block md:max-w-43 xl:max-w-72 2xl:max-w-full"
+                className="max-h-auto absolute top-0 right-0 hidden md:block md:max-w-43 xl:max-w-72 2xl:max-w-full pointer-events-none"
             />
         </div>
     );

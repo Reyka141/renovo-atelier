@@ -10,3 +10,4 @@ export { ProductCard } from './ProductCard/ProductCard';
 export { AboutUs } from './AboutUs/AboutUs';
 export { FAQAnswers } from './FAQAnswers/FAQAnswers';
 export { OurWork } from './OurWork/OurWork';
+export { Feedback } from './Feedback/Feedback';
