@@ -13,7 +13,7 @@ interface DisclosureProps {
 export const Disclosure: FC<DisclosureProps> = (props) => {
     const { className, items } = props;
     return (
-        <div className={cn(className, 'flex max-w-full flex-col gap-3')}>
+        <div className={cn(className, 'flex max-w-full flex-col gap-5')}>
             {items?.map((item) => (
                 <DisclosureHeadless as="div" defaultOpen={true} key={item.title}>
                     <DisclosureButton className="group flex w-full items-center justify-between">

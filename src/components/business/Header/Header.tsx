@@ -36,8 +36,8 @@ export async function Header() {
             <Link href="/">
                 <Image src={'/header/logo.svg'} alt="logo" width={120} height={24} />
             </Link>
-            <nav>
-                <ul className="hidden lg:flex lg:gap-6 xl:gap-16">
+            <nav className="hidden lg:block">
+                <ul className="flex lg:gap-6 xl:gap-16">
                     {links.map((link) => (
                         <li className="text-white" key={link.href}>
                             <Link href={link.href}>{t(link.label)}</Link>
@@ -45,12 +45,12 @@ export async function Header() {
                     ))}
                 </ul>
             </nav>
-            <div className="flex items-center gap-3 xl:gap-10">
+            <div className="flex flex-1 items-center justify-end gap-3 lg:justify-end xl:gap-10">
                 <div className="flex cursor-pointer items-center gap-2">
                     <span className="leading-[150%] font-normal text-white">1</span>
                     <Image src={'/header/cart.svg'} alt="cart" width={24} height={24} />
                 </div>
-                <LanguageSwitcher />
+                <LanguageSwitcher className="hidden md:block" />
 
                 <Burger className="lg:hidden" links={links} />
             </div>

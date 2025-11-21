@@ -9,8 +9,9 @@ export default async function HomePage() {
                 <OurServices />
                 <AboutUs />
                 <OurWork />
-                <FAQAnswers />
                 <Feedback />
+
+                <FAQAnswers />
             </main>
         </div>
     );
