@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 @import 'swiper/css';
 
-
 /* Цвета  */
 :root {
     --black: #212a30;
@@ -44,7 +43,6 @@
     --text-h2--line-height: 100%;
     --text-h2-mobile: 1.5rem;
     --text-h2-mobile--line-height: 100%;
-   
 }
 
 body {

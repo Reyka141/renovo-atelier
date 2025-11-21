@@ -23,9 +23,7 @@ export const AboutUs: FC<AboutUsProps> = (props) => {
                 <h3 className="font-secondary lg:text-h1 text-h1-mobile max-w-fit border-b border-black pb-3">
                     {t('title')}
                 </h3>
-                <p className="lg:text-body-desktop text-body-mobile">
-                  {t('description')}
-                </p>
+                <p className="lg:text-body-desktop text-body-mobile">{t('description')}</p>
             </VStack>
             <Image
                 src={leftSideImg}

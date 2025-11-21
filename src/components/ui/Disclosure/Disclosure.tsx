@@ -18,9 +18,11 @@ export const Disclosure: FC<DisclosureProps> = (props) => {
                 <DisclosureHeadless as="div" defaultOpen={true} key={item.title}>
                     <DisclosureButton className="group flex w-full items-center justify-between">
                         <span className="text-h2-mobile lg:text-h2 font-secondary">{item.title}</span>
-                        <ArrowDown className="group-data-open:rotate-180 transition-transform duration-300" />
+                        <ArrowDown className="transition-transform duration-300 group-data-open:rotate-180" />
                     </DisclosureButton>
-                    <DisclosurePanel className="mt-2 pb-3 border-b border-gray text-left">{item.answer}</DisclosurePanel>
+                    <DisclosurePanel className="border-gray mt-2 border-b pb-3 text-left">
+                        {item.answer}
+                    </DisclosurePanel>
                 </DisclosureHeadless>
             ))}
         </div>

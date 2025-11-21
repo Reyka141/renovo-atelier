@@ -6,10 +6,10 @@ export default async function HomePage() {
             <Header />
             <main className="flex flex-col gap-9 xl:gap-16 2xl:gap-28">
                 <Hero />
-                {/* <OurServices /> */}
-                {/* <AboutUs /> */}
-                {/* <FAQAnswers /> */}
+                <OurServices />
+                <AboutUs />
                 <OurWork />
+                <FAQAnswers />
             </main>
         </div>
     );
