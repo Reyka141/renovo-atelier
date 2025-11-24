@@ -43,6 +43,9 @@
     --text-h2--line-height: 100%;
     --text-h2-mobile: 1.5rem;
     --text-h2-mobile--line-height: 100%;
+    --text-size-s: 1.5rem;
+    --text-size-s--line-height: 100%;
+    --text-size-s--font-weight: 500;
 }
 
 body {

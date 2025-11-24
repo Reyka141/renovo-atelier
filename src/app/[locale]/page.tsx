@@ -1,4 +1,4 @@
-import { AboutUs, FAQAnswers, Feedback, Header, Hero, OurServices, OurWork } from '@/components';
+import { AboutUs, FAQAnswers, Feedback, Footer, Header, Hero, OurServices, OurWork } from '@/components';
 
 export default async function HomePage() {
     return (
@@ -12,6 +12,7 @@ export default async function HomePage() {
                 <Feedback />
 
                 <FAQAnswers />
+                <Footer />
             </main>
         </div>
     );

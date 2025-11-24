@@ -9,4 +9,4 @@ export { VStack } from './Stack/VStack/VStack';
 export { ListBox } from './ListBox/ListBox';
 export { Disclosure } from './Disclosure/Disclosure';
 // Здесь будут добавляться другие UI компоненты:
-// export { Input } from './forms/Input';
+export { Input } from './Input/Input';
