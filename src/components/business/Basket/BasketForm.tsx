@@ -12,7 +12,7 @@ export const BasketForm: FC<BasketFormProps> = (props) => {
     const t = useTranslations('Basket');
     return (
         <div className={cn(className, 'w-full md:max-w-[480px]')}>
-            <h3 className="font-secondary pb-9 text-2xl md:text-4xl">{t('orderTitle')}</h3>
+            <h3 className="font-secondary pb-6 lg:pb-9 text-2xl md:text-4xl">{t('orderTitle')}</h3>
             <form action="" className="flex flex-col gap-6">
                 <VStack gap="32" className="w-full md:max-w-[447px]">
                     <Input placeholder={t('name')} required />
