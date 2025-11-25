@@ -56,7 +56,9 @@
     "oldItemRedesign": "Перешив старой вещи",
     "machineryEmbroidery": "Машинная вышивка",
     "laceDecoration": "Украшение кружевом",
-    "decorDecoration": "Украшение декором"
+    "decorDecoration": "Украшение декором",
+    "addedToBasket": "Товар добавлен в корзину",
+    "goToBasket": "Перейти в корзину"
   },
   "AboutUs": {
     "title": "Renovo&atelier",
@@ -113,5 +115,11 @@
     "privacyPolicy": "Отправляя данные, вы соглашаетесь с нашей",
     "privacyPolicyLink": "Политикой конфиденциальности.",
     "phone": "Номер телфона"
+  },
+  "Basket": {
+    "title": "Корзина",
+    "totalServices": "Всего услуг: ({count})",
+    "clearAll": "Очистить все",
+    "basketIsEmpty": "Корзина пуста"
   }
 }

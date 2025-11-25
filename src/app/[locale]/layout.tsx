@@ -1,4 +1,5 @@
 import { routing } from '@/i18n/routing';
+import { AppProvider } from '@/providers';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
@@ -68,7 +69,9 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
                     `}
                 </Script>
 
-                <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+                <NextIntlClientProvider messages={messages}>
+                    <AppProvider>{children}</AppProvider>
+                </NextIntlClientProvider>
             </body>
         </html>
     );

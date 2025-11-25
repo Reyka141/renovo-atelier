@@ -1,6 +1,7 @@
 import { Burger, LanguageSwitcher, Link } from '@/components';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
+import { BasketHeader } from '../Basket/BasketHeader';
 
 interface HeaderProps {
     textColor?: 'white' | 'black';
@@ -53,10 +54,7 @@ export async function Header({ textColor = 'white' }: HeaderProps) {
                 </ul>
             </nav>
             <div className="flex flex-1 items-center justify-end gap-3 md:flex-none lg:justify-end xl:gap-10">
-                <Link href="/basket" className="flex cursor-pointer items-center gap-2">
-                    <span className={`leading-[150%] font-normal ${textColorClass}`}>1</span>
-                    <Image src={`/header/cart-${textColor}.svg`} alt="cart" width={24} height={24} />
-                </Link>
+                <BasketHeader textColor={textColor} />
                 <LanguageSwitcher className="hidden md:block" textColor={textColor} />
 
                 <Burger className="lg:hidden" links={links} textColor={textColor} />

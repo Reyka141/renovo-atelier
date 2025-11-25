@@ -56,7 +56,9 @@
     "oldItemRedesign": "Old Item Redesign",
     "machineryEmbroidery": "Machine Embroidery",
     "laceDecoration": "Lace Decoration",
-    "decorDecoration": "Decor Decoration"
+    "decorDecoration": "Decor Decoration",
+    "addedToBasket": "Product added to cart",
+    "goToBasket": "Go to cart"
   },
   "AboutUs": {
     "title": "Renovo&atelier",
@@ -113,5 +115,11 @@
     "privacyPolicy": "By submitting data, you agree to our",
     "privacyPolicyLink": "Privacy Policy.",
     "phone": "Phone number"
+  },
+  "Basket": {
+    "title": "Basket",
+    "totalServices": "Total services: ({count})",
+    "clearAll": "Clear all",
+    "basketIsEmpty": "Basket is empty"
   }
 }

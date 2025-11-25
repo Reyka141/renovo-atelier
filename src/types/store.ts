@@ -53,9 +53,31 @@ export interface AppActions {
 
 export interface AppStore extends AppState, AppActions {}
 
+// Состояние корзины
+export interface BasketItem {
+    id: string;
+    title: string;
+    price: string;
+    image: string; // путь к изображению
+}
+
+export interface BasketState {
+    items: BasketItem[];
+}
+
+export interface BasketActions {
+    addItem: (item: BasketItem) => void;
+    removeItem: (itemId: string) => void;
+    clearBasket: () => void;
+    isItemInBasket: (itemId: string) => boolean;
+}
+
+export interface BasketStore extends BasketState, BasketActions {}
+
 // Общий тип для всех stores
 export interface RootStore {
     counter: CounterStore;
     user: UserStore;
     app: AppStore;
+    basket: BasketStore;
 }
