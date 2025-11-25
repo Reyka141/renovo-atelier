@@ -12,3 +12,4 @@ export { AboutUs } from './AboutUs/AboutUs';
 export { FAQAnswers } from './FAQAnswers/FAQAnswers';
 export { OurWork } from './OurWork/OurWork';
 export { Feedback } from './Feedback/Feedback';
+export { Basket } from './Basket/Basket';

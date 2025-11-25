@@ -16,7 +16,14 @@ const languageOptions: LanguageOption[] = [
     { code: 'ru', name: 'Русский', flag: 'Ru' },
 ];
 
-export function LanguageSwitcher({ className }: { className?: string }) {
+export function LanguageSwitcher({
+    className,
+    textColor = 'white',
+}: {
+    className?: string;
+    textColor?: 'white' | 'black';
+}) {
+    const textColorClass = textColor === 'black' ? 'text-black' : 'text-white';
     const t = useTranslations('LanguageSwitcher');
     const locale = useLocale();
     const router = useRouter();
@@ -36,14 +43,14 @@ export function LanguageSwitcher({ className }: { className?: string }) {
             {/* Кнопка переключения */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`flex items-center gap-2 text-xl font-medium text-white`}
+                className={`flex items-center gap-2 text-xl font-medium ${textColorClass}`}
                 aria-label={t('language')}
             >
-                <Image src={'/globe.svg'} alt="language" width={24} height={24} />
-                <span className="hidden sm:inline">{currentLanguage?.flag}</span>
+                <Image src={`/header/global-${textColor}.svg`} alt="language" width={24} height={24} />
+                <span className={`hidden sm:inline ${textColorClass}`}>{currentLanguage?.flag}</span>
                 <Image
                     className={`transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
-                    src={'/arrow-down.svg'}
+                    src={`/arrow-down-${textColor}.svg`}
                     alt="arrow-down"
                     width={24}
                     height={24}

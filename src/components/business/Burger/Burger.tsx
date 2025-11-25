@@ -7,24 +7,26 @@ import { FC, useState } from 'react';
 
 interface BurgerProps {
     className?: string;
+    textColor?: 'white' | 'black';
     links: {
         href: string;
         label: string;
     }[];
 }
 export const Burger: FC<BurgerProps> = (props) => {
-    const { className, links } = props;
+    const { className, links, textColor = 'white' } = props;
     const [isOpen, setIsOpen] = useState(false);
     const ref = useClickOutside<HTMLDivElement>(() => setIsOpen(false));
     const t = useTranslations('Header');
+    const textColorClass = textColor === 'black' ? 'bg-black' : 'bg-white';
     return (
         <div ref={ref} className={className}>
             <Menu>
                 <MenuButton className="burger focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
                     <input type="checkbox" id="burger" onChange={() => ''} checked={isOpen} />
-                    <span />
-                    <span />
-                    <span />
+                    <span className={textColorClass} />
+                    <span className={textColorClass} />
+                    <span className={textColorClass} />
                 </MenuButton>
                 <MenuItems
                     anchor="bottom end"
