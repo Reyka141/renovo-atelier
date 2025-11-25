@@ -5,6 +5,7 @@ import cn from 'classnames';
 import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 import { BasketList } from './BasketList';
+import { BasketForm } from './BasketForm';
 
 interface BasketProps {
     className?: string;
@@ -20,9 +21,9 @@ export const Basket: FC<BasketProps> = (props) => {
                 <HStack max justify="between" className="border-b border-black pb-4">
                     <h2 className="font-secondary text-2xl md:text-4xl xl:text-6xl">{t('title')}</h2>
                 </HStack>
-                <HStack max justify="between">
+                <HStack max align="start" justify="between" gap="64">
                     <BasketList className="w-full" />
-                    {/* <div>basket form</div> */}
+                    <BasketForm />
                 </HStack>
             </VStack>
         </div>

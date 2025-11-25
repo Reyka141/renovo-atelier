@@ -120,6 +120,12 @@
     "title": "Basket",
     "totalServices": "Total services: ({count})",
     "clearAll": "Clear all",
-    "basketIsEmpty": "Basket is empty"
+    "basketIsEmpty": "Basket is empty",
+    "name": "Name",
+    "phone": "Phone number",
+    "send": "Send order",
+    "privacyPolicy": "By submitting data, you agree to our",
+    "privacyPolicyLink": "Privacy Policy.",
+    "orderTitle": "Registration:"
   }
 }

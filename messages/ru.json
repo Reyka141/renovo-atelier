@@ -120,6 +120,12 @@
     "title": "Корзина",
     "totalServices": "Всего услуг: ({count})",
     "clearAll": "Очистить все",
-    "basketIsEmpty": "Корзина пуста"
+    "basketIsEmpty": "Корзина пуста",
+    "name": "Имя",
+    "phone": "Номер телефона",
+    "send": "Отправить заказ",
+    "privacyPolicy": "Отправляя данные, вы соглашаетесь с нашей",
+    "privacyPolicyLink": "Политикой конфиденциальности.",
+    "orderTitle": "Оформление:"
   }
 }
