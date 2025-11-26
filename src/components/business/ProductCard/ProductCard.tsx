@@ -63,13 +63,13 @@ export const ProductCard: FC<ProductCardProps> = (props) => {
     };
 
     return (
-        <div className={cn(className, 'flex flex-col gap-2 border border-black p-3 lg:gap-3')}>
+        <div className={cn(className, 'flex h-full flex-col gap-2 border border-black p-3 lg:gap-3')}>
             <Image
                 src={image}
                 alt={title}
                 width={336}
                 height={512}
-                className="h-50 w-full object-contain sm:h-100 md:h-full"
+                className="h-50 w-full object-contain sm:h-100 md:h-[512px]"
             />
             <p className="">{t(title)}</p>
             <Button size="sm" onClick={handleToggleBasket} variant={isInBasket ? 'secondary' : 'primary'}>

@@ -21,7 +21,7 @@ export const Basket: FC<BasketProps> = (props) => {
                 <HStack max justify="between" className="border-b border-black pb-4">
                     <h2 className="font-secondary text-2xl md:text-4xl xl:text-6xl">{t('title')}</h2>
                 </HStack>
-                <div className="flex flex-col md:flex-row gap-6 lg:gap-16 ">
+                <div className="flex flex-col gap-6 md:flex-row lg:gap-16">
                     <BasketList className="w-full" />
                     <BasketForm />
                 </div>

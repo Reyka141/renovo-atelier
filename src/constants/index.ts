@@ -10,3 +10,6 @@ export * from './ui';
 
 // Конфигурация
 export * from './config';
+
+// Продукты
+export * from './products';
