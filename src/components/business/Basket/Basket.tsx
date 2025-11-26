@@ -22,7 +22,7 @@ export const Basket: FC<BasketProps> = (props) => {
                     <h2 className="font-secondary text-2xl md:text-4xl xl:text-6xl">{t('title')}</h2>
                 </HStack>
                 <div className="flex flex-col gap-6 md:flex-row lg:gap-16">
-                    <BasketList className="w-full" />
+                    <BasketList className="w-full " />
                     <BasketForm />
                 </div>
             </VStack>

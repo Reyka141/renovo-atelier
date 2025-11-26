@@ -31,7 +31,7 @@ export const BasketList: FC<BasketListProps> = (props) => {
             {count === 0 ? (
                 <div className="text-gray py-12 text-center">{t('basketIsEmpty')}</div>
             ) : (
-                <VStack max gap="16">
+                <VStack max gap="16" className="md:h-[500px] overflow-y-auto pr-2">
                     {items.map((item) => (
                         <BasketItem key={item.id} item={item} />
                     ))}
