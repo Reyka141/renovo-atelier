@@ -25,7 +25,7 @@ export const OurServices: FC<OurServicesProps> = (props) => {
     const [activeType, setActiveType] = useState<ServiceType>('all');
     const t = useTranslations('OurServices');
     return (
-        <div className={cn(className, 'container flex flex-col gap-6 xl:gap-8 2xl:gap-16')}>
+        <div id="services" className={cn(className, 'container flex flex-col gap-6 xl:gap-8 2xl:gap-16')}>
             <VStack gap="16" max>
                 <HStack max justify="between" className="border-b border-black pb-4 xl:border-none xl:pb-0">
                     <h2 className="font-secondary text-2xl md:text-4xl xl:border-b-0 xl:text-6xl">{t('title')}</h2>

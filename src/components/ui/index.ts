@@ -4,6 +4,7 @@ export type { ButtonProps } from './Button/Button';
 export { LoadingSpinner } from './feedback/LoadingSpinner';
 export type { LoadingSpinnerProps } from './feedback/LoadingSpinner';
 export { Link } from './link/Link';
+export { SmoothScrollLink } from './link/SmoothScrollLink';
 export { HStack } from './Stack/HStack/HStack';
 export { VStack } from './Stack/VStack/VStack';
 export { ListBox } from './ListBox/ListBox';

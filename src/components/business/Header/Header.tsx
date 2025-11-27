@@ -1,4 +1,4 @@
-import { Burger, LanguageSwitcher, Link } from '@/components';
+import { Burger, LanguageSwitcher, Link, SmoothScrollLink } from '@/components';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { BasketHeader } from '../Basket/BasketHeader';
@@ -9,27 +9,27 @@ interface HeaderProps {
 
 const links = [
     {
-        href: '/services',
+        href: '#services',
         label: 'services',
     },
     {
-        href: '/about',
+        href: '#about',
         label: 'about',
     },
     {
-        href: '/examples',
+        href: '#examples',
         label: 'examples',
     },
     {
-        href: '/reviews',
+        href: '#reviews',
         label: 'reviews',
     },
     {
-        href: '/faq',
+        href: '#faq',
         label: 'faq',
     },
     {
-        href: '/contacts',
+        href: '#contacts',
         label: 'contacts',
     },
 ];
@@ -46,9 +46,9 @@ export async function Header({ textColor = 'white' }: HeaderProps) {
                 <ul className="flex lg:gap-6 xl:gap-16">
                     {links.map((link) => (
                         <li key={link.href}>
-                            <Link className={textColorClass} href={link.href}>
+                            <SmoothScrollLink className={textColorClass} href={link.href}>
                                 {t(link.label)}
-                            </Link>
+                            </SmoothScrollLink>
                         </li>
                     ))}
                 </ul>

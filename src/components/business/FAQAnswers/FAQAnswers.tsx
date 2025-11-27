@@ -30,7 +30,7 @@ export const FAQAnswers: FC<FAQAnswersProps> = (props) => {
     ];
 
     return (
-        <div className={cn(className, 'relative')}>
+        <div id="faq" className={cn(className, 'relative')}>
             <VStack
                 max
                 gap="24"

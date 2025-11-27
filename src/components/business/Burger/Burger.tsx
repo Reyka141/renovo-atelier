@@ -1,8 +1,8 @@
 'use client';
+import { SmoothScrollLink } from '@/components';
 import { useClickOutside } from '@/hooks/ui/useClickOutside';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import { FC, useState } from 'react';
 
 interface BurgerProps {
@@ -34,9 +34,13 @@ export const Burger: FC<BurgerProps> = (props) => {
                 >
                     {links.map((link) => (
                         <MenuItem key={link.href}>
-                            <Link className="block data-focus:bg-blue-100" href={link.href}>
+                            <SmoothScrollLink
+                                className="block data-focus:bg-blue-100"
+                                href={link.href}
+                                onClick={() => setIsOpen(false)}
+                            >
                                 {t(link.label)}
-                            </Link>
+                            </SmoothScrollLink>
                         </MenuItem>
                     ))}
                 </MenuItems>

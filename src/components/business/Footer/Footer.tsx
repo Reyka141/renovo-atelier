@@ -31,7 +31,7 @@ export function Footer() {
             });
     };
     return (
-        <footer className="container pb-32">
+        <footer id="contacts" className="container pb-32">
             <VStack max gap="64">
                 <HStack max justify="between" className="border-b border-black pb-4">
                     <h2 className="font-secondary text-2xl md:text-4xl xl:text-6xl">{t('title')}</h2>

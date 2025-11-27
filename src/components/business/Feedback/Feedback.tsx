@@ -69,7 +69,7 @@ export const Feedback: FC<FeedbackProps> = (props) => {
     );
 
     return (
-        <div className={cn(className, 'container flex flex-col gap-6')}>
+        <div id="reviews" className={cn(className, 'container flex flex-col gap-6')}>
             <VStack max gap="64">
                 <HStack max justify="between" className="border-b border-black pb-4">
                     <h2 className="font-secondary text-2xl md:text-4xl xl:text-6xl">{t('title')}</h2>

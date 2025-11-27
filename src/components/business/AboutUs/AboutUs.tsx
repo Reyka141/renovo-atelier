@@ -13,7 +13,7 @@ export const AboutUs: FC<AboutUsProps> = (props) => {
     const { className } = props;
     const t = useTranslations('AboutUs');
     return (
-        <div className={cn(className, 'relative')}>
+        <div id="about" className={cn(className, 'relative')}>
             <VStack
                 max
                 gap="24"
