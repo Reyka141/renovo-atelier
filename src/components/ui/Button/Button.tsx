@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import React from 'react';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -17,7 +18,7 @@ export const Button: React.FC<ButtonProps> = ({
     ...props
 }) => {
     const baseClasses = 'font-normal';
-
+    const t = useTranslations('Common');
     const variantClasses = {
         primary:
             'bg-transparent border border-black hover:bg-transparent hover:text-brown text-black focus:ring-transparent transition-all duration-300',
@@ -41,7 +42,7 @@ export const Button: React.FC<ButtonProps> = ({
             {isLoading ? (
                 <div className="flex items-center">
                     <div className="mr-2 h-4 w-4 animate-spin rounded-full border-b-2 border-white"></div>
-                    Загрузка...
+                    {t('loading')}
                 </div>
             ) : (
                 children

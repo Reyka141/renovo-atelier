@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser';
 import cn from 'classnames';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { FC, useState } from 'react';
 interface BasketFormProps {
     className?: string;
@@ -16,10 +17,15 @@ export const BasketForm: FC<BasketFormProps> = (props) => {
     const t = useTranslations('Basket');
     const tServices = useTranslations('OurServices');
     const items = useBasketStore((state) => state.items);
-    const [isLoading, setIsLoading] = useState(false);
+    const clearBasket = useBasketStore((state) => state.clearBasket);
 
+    const [isLoading, setIsLoading] = useState(false);
+    const router = useRouter();
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        if (items.length === 0) {
+            return;
+        }
         const formData = new FormData(e.target as HTMLFormElement);
         const order_id = generateId();
         const name = formData.get('name') as string;
@@ -39,6 +45,8 @@ export const BasketForm: FC<BasketFormProps> = (props) => {
             .send('service_eofo1fm', 'template_hb369qq', data)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
+                clearBasket();
+                router.push('/success-send');
             })
             .catch((error) => {
                 console.log('FAILED...', error);

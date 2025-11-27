@@ -115,7 +115,9 @@
     "send": "Contact us",
     "privacyPolicy": "By submitting data, you agree to our",
     "privacyPolicyLink": "Privacy Policy.",
-    "phone": "Phone number"
+    "phone": "Phone number",
+    "messageSentSuccessfully": "We have received your contacts and will contact you shortly.",
+    "failedToSendMessage": "An unknown error has occurred, please try again."
   },
   "Basket": {
     "title": "Basket",
@@ -128,5 +130,16 @@
     "privacyPolicy": "By submitting data, you agree to our",
     "privacyPolicyLink": "Privacy Policy.",
     "orderTitle": "Registration:"
+  },
+  "SuccessSend": {
+    "backToHome": "Return to home",
+    "title": "Application sent successfully!",
+    "description": "Thanks for your request! \nWe have received your application and will contact you within 24 hours to clarify details and estimate the cost of the service.",
+    "contactUs": "For urgent questions",
+    "email": "renovoateliermail@gmail.com",
+    "phone": "+48 796 271 708"
+  },
+  "Common": {
+    "loading": "Loading"
   }
 }

@@ -3,10 +3,14 @@ import ArrowRightIcon from '@/assets/icons/arrow-right.svg';
 import { Button, HStack, Input, Link, VStack } from '@/components/ui';
 import emailjs from '@emailjs/browser';
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 export function Footer() {
     const t = useTranslations('Footer');
+    const [isLoading, setIsLoading] = useState(false);
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        setIsLoading(true);
         e.preventDefault();
         const formData = new FormData(e.target as HTMLFormElement);
         const name = formData.get('name') as string;
@@ -16,9 +20,14 @@ export function Footer() {
             .send('service_eofo1fm', 'template_s25n40c', data)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
+                toast.success(t('messageSentSuccessfully'));
             })
             .catch((error) => {
+                toast.error(t('failedToSendMessage'));
                 console.log('FAILED...', error);
+            })
+            .finally(() => {
+                setIsLoading(false);
             });
     };
     return (
@@ -67,6 +76,8 @@ export function Footer() {
                                     variant="primary"
                                     size="sm"
                                     type="submit"
+                                    isLoading={isLoading}
+                                    disabled={isLoading}
                                 >
                                     {t('send')} <ArrowRightIcon />
                                 </Button>
@@ -83,6 +94,8 @@ export function Footer() {
                                     variant="primary"
                                     size="sm"
                                     type="submit"
+                                    isLoading={isLoading}
+                                    disabled={isLoading}
                                 >
                                     {t('send')} <ArrowRightIcon />
                                 </Button>
