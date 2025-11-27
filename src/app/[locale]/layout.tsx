@@ -59,15 +59,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
                     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
                     strategy="beforeInteractive"
                 />
-                <Script id="emailjs-init" strategy="beforeInteractive">
-                    {`
-                        (function(){
-                            emailjs.init({
-                                publicKey: "AxX5jN7jJ0WvIXgtB",
-                            });
-                        })();
-                    `}
-                </Script>
 
                 <NextIntlClientProvider messages={messages}>
                     <AppProvider>{children}</AppProvider>
