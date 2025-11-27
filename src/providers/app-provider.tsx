@@ -4,6 +4,7 @@ import { ReactNode } from 'react';
 import { CounterStoreProvider } from './counter-store-provider';
 import { BasketStoreProvider } from './basket-store-provider';
 import { ToastContainer } from 'react-toastify';
+import { EmailJsProvider } from './email-js-provider';
 
 interface AppProviderProps {
     children: ReactNode;
@@ -16,12 +17,14 @@ export const AppProvider = ({ children }: AppProviderProps) => {
     return (
         <CounterStoreProvider>
             <BasketStoreProvider>
-                {/* Здесь можно добавить другие провайдеры */}
-                {/* <UserStoreProvider> */}
-                {/* <ThemeProvider> */}
-                {children}
-                {/* </ThemeProvider> */}
-                {/* </UserStoreProvider> */}
+                <EmailJsProvider>
+                    {/* Здесь можно добавить другие провайдеры */}
+                    {/* <UserStoreProvider> */}
+                    {/* <ThemeProvider> */}
+                    {children}
+                    {/* </ThemeProvider> */}
+                    {/* </UserStoreProvider> */}
+                </EmailJsProvider>
                 <ToastContainer position="bottom-right" />
             </BasketStoreProvider>
         </CounterStoreProvider>

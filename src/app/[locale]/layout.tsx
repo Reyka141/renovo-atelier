@@ -61,7 +61,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
                 />
                 <Script id="emailjs-init" strategy="beforeInteractive">
                     {`
-            (function(){
+                        (function(){
                             emailjs.init({
                                 publicKey: "AxX5jN7jJ0WvIXgtB",
                             });

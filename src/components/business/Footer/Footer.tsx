@@ -1,9 +1,26 @@
+'use client';
 import ArrowRightIcon from '@/assets/icons/arrow-right.svg';
 import { Button, HStack, Input, Link, VStack } from '@/components/ui';
-import { getTranslations } from 'next-intl/server';
+import emailjs from '@emailjs/browser';
+import { useTranslations } from 'next-intl';
 
-export async function Footer() {
-    const t = await getTranslations('Footer');
+export function Footer() {
+    const t = useTranslations('Footer');
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const formData = new FormData(e.target as HTMLFormElement);
+        const name = formData.get('name') as string;
+        const phone = formData.get('phone') as string;
+        const data = { title: 'Связаться с нами', message: `Имя: ${name} Хочет связаться с вами\nТелефон: ${phone}` };
+        emailjs
+            .send('service_eofo1fm', 'template_s25n40c', data)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+            })
+            .catch((error) => {
+                console.log('FAILED...', error);
+            });
+    };
     return (
         <footer className="container pb-32">
             <VStack max gap="64">
@@ -33,9 +50,9 @@ export async function Footer() {
                         </p>
                     </div>
                     <HStack>
-                        <form action="" className="hidden gap-16 lg:flex">
+                        <form onSubmit={handleSubmit} className="hidden gap-16 lg:flex">
                             <VStack gap="32" className="w-full max-w-[447px]">
-                                <Input placeholder={t('name')} required />
+                                <Input name="name" placeholder={t('name')} required />
                                 <p className="text-gray text-body-mobile">
                                     {t('privacyPolicy')}{' '}
                                     <Link href="/privacy-policy" className="text-brown">
@@ -44,7 +61,7 @@ export async function Footer() {
                                 </p>
                             </VStack>
                             <VStack gap="32" className="w-full max-w-[447px]">
-                                <Input type="tel" placeholder={t('phone')} required />
+                                <Input name="phone" type="tel" placeholder={t('phone')} required />
                                 <Button
                                     className="flex items-center justify-between gap-2"
                                     variant="primary"
@@ -57,8 +74,8 @@ export async function Footer() {
                         </form>
                         <form action="" className="flex flex-col gap-6 lg:hidden">
                             <VStack gap="32" className="w-full md:max-w-[447px]">
-                                <Input placeholder={t('name')} required />
-                                <Input type="tel" placeholder={t('phone')} required />
+                                <Input name="name" placeholder={t('name')} required />
+                                <Input name="phone" type="tel" placeholder={t('phone')} required />
                             </VStack>
                             <VStack gap="32" className="w-full md:max-w-[447px]">
                                 <Button
