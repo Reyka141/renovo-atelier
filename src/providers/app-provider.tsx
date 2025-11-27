@@ -5,6 +5,7 @@ import { CounterStoreProvider } from './counter-store-provider';
 import { BasketStoreProvider } from './basket-store-provider';
 import { ToastContainer } from 'react-toastify';
 import { EmailJsProvider } from './email-js-provider';
+import { Analytics } from "@vercel/analytics/next"
 
 interface AppProviderProps {
     children: ReactNode;
@@ -26,6 +27,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
                     {/* </UserStoreProvider> */}
                 </EmailJsProvider>
                 <ToastContainer position="bottom-right" />
+                <Analytics />
             </BasketStoreProvider>
         </CounterStoreProvider>
     );
