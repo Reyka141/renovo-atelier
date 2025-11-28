@@ -4,6 +4,12 @@ import ourWorks_1 from '@/assets/ourWorks/ourWorks_1.jpg';
 import ourWorks_2 from '@/assets/ourWorks/ourWorks_2.jpg';
 import ourWorks_3 from '@/assets/ourWorks/ourWorks_3.jpg';
 import ourWorks_4 from '@/assets/ourWorks/ourWorks_4.jpg';
+import ourWorks_5 from '@/assets/ourWorks/ourWorks_5.jpg';
+import ourWorks_6 from '@/assets/ourWorks/ourWorks_6.jpg';
+import ourWorks_7 from '@/assets/ourWorks/ourWorks_7.jpg';
+import ourWorks_8 from '@/assets/ourWorks/ourWorks_8.jpg';
+import ourWorks_9 from '@/assets/ourWorks/ourWorks_9.jpg';
+import ourWorks_10 from '@/assets/ourWorks/ourWorks_10.jpg';
 
 import { Button, HStack, VStack } from '@/components/ui';
 import { useIsMobile, useIsTablet } from '@/hooks';
@@ -116,7 +122,7 @@ export const OurWork: FC<OurWorkProps> = (props) => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
-                            src={ourWorks_2}
+                            src={ourWorks_5}
                             alt="Our Work"
                             width={312}
                             height={600}
@@ -125,7 +131,7 @@ export const OurWork: FC<OurWorkProps> = (props) => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
-                            src={ourWorks_2}
+                            src={ourWorks_6}
                             alt="Our Work"
                             width={312}
                             height={600}
@@ -134,7 +140,7 @@ export const OurWork: FC<OurWorkProps> = (props) => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
-                            src={ourWorks_2}
+                            src={ourWorks_7}
                             alt="Our Work"
                             width={312}
                             height={600}
@@ -143,7 +149,7 @@ export const OurWork: FC<OurWorkProps> = (props) => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
-                            src={ourWorks_2}
+                            src={ourWorks_8}
                             alt="Our Work"
                             width={312}
                             height={600}
@@ -152,7 +158,7 @@ export const OurWork: FC<OurWorkProps> = (props) => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
-                            src={ourWorks_2}
+                            src={ourWorks_9}
                             alt="Our Work"
                             width={312}
                             height={600}
@@ -161,7 +167,7 @@ export const OurWork: FC<OurWorkProps> = (props) => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <Image
-                            src={ourWorks_2}
+                            src={ourWorks_10}
                             alt="Our Work"
                             width={312}
                             height={600}

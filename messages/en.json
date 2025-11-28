@@ -63,15 +63,15 @@
   },
   "AboutUs": {
     "title": "Renovo&atelier",
-    "description": "We are the company \"Technoservice\", which provides a wide range of services in IT and digital technologies. \nOur team of professionals is ready to help you with the development of software, the creation of websites and the implementation of innovative solutions for your business. \nWe strive for the quality and satisfaction of the needs of our customers."
+    "description": "We are a workshop where every thing gets a second chance and a new breath. \nIt is important for us not just to hem or replace the zipper, but to make sure that the clothes are again pleasing, fit comfortably and look decent. \nWe care about details and truly love our work - from repairs to custom tailoring and embroidery. \nFor us, the value of a thing is measured by the stories that it will continue with you."
   },
   "FAQAnswers": {
-    "title1": "Test question1",
-    "answer1": "Test text",
-    "title2": "Test question2",
-    "answer2": "Test answer2",
-    "title3": "Test question3",
-    "answer3": "Test answer3",
+    "title1": "What are the turnaround times for repairs and tailoring?",
+    "answer1": "The time depends on complexity: basic repairs (hemming, zipper replacement, minor restoration) usually take 1–3 days, more complex alterations or custom tailoring — from 5 to 14 days. We always agree deadlines in advance and strive to deliver earlier, never compromising on quality.",
+    "title2": "Do you work with expensive and delicate materials?",
+    "answer2": "Yes, we confidently work with leather, cashmere, silk, and items with decorative elements. For complex fabrics, we use gentle technologies and an individual approach to preserve the fabric structure and appearance.",
+    "title3": "Can you tailor an item exactly to fit my body?",
+    "answer3": "Absolutely, custom fitting is one of our strengths. We clarify your preferences, take precise measurements, and offer solutions that will be comfortable to wear and look neat according to the item’s cut.",
     "title": "Answers to questions"
   },
   "OurWork": {
@@ -80,32 +80,32 @@
   "Feedback": {
     "title": "Reviews",
     "feedback1": {
-      "name": "Daria.A",
+      "name": "Daria A.",
       "date": "June 1,2025",
       "stars": "5",
-      "text": "We are a company that provides a wide range of services in the field of IT and digital technologies. Our team of professionals is ready to help you with the development of software, the creation of websites and the implementation of innovative solutions for your business. We strive for the quality and satisfaction of the needs of our customers.",
+      "text": "The repair was done perfectly — the seams are straight, just like on a new item. The craftsmen are truly attentive to details and do not cut corners on quality. I picked up my coat ahead of schedule and now wear it with pleasure.",
       "image": "/feedback/Feedback_1.jpg"
     },
     "feedback2": {
-      "name": "Daria.A",
-      "date": "December 10,2025",
-      "stars": "3",
-      "text": "We are a company that provides a wide range of services in the field of IT and digital technologies. Our team of professionals is ready to help you with the development of software, the creation of websites and the implementation of innovative solutions for your business. We strive for the quality and satisfaction of the needs of our customers.",
-      "image": "/feedback/Feedback_1.jpg"
+      "name": "Anna B.",
+      "date": "September 10,2025",
+      "stars": "5",
+      "text": "“The best atelier where I've ever had my clothes fixed.” The embroidery and zipper replacement were done neatly; you can’t even tell there was a repair — the result exceeded expectations. I recommend it if you're after reliability and a personal approach.",
+      "image": "/feedback/Feedback_2.jpg"
     },
     "feedback3": {
-      "name": "Daria.A",
-      "date": "December 10,2025",
-      "stars": "3",
-      "text": "We are a company that provides a wide range of services in the field of IT and digital technologies. Our team of professionals is ready to help you with the development of software, the creation of websites and the implementation of innovative solutions for your business. We strive for the quality and satisfaction of the needs of our customers.",
-      "image": "/feedback/Feedback_1.jpg"
+      "name": "Maria F.",
+      "date": "September 20,2025",
+      "stars": "5",
+      "text": "“The remake of my old dress is pure delight, as if it was sewn anew.” The team really listens and gives honest suggestions about what would look better and last longer. The fit became perfect, now it's my favorite thing to wear.",
+      "image": "/feedback/Feedback_3.jpg"
     },
     "feedback4": {
-      "name": "Daria.A",
-      "date": "December 10,2025",
-      "stars": "2",
-      "text": "We are a company that provides a wide range of services in the field of IT and digital technologies. Our team of professionals is ready to help you with the development of software, the creation of websites and the implementation of innovative solutions for your business. We strive for the quality and satisfaction of the needs of our customers.",
-      "image": "/feedback/Feedback_1.jpg"
+      "name": "Alex M.",
+      "date": "October 1,2025",
+      "stars": "5",
+      "text": "“I entrusted them with a leather jacket with scuffs and a tricky tear — the result is like fine jewelry work.” You can feel their professionalism and love for the craft. The jacket looks even better than before, the job was fast and with real care.",
+      "image": "/feedback/Feedback_4.jpg"
     }
   },
   "Footer": {

@@ -25,8 +25,7 @@ export const SmoothScrollLink: FC<SmoothScrollLinkProps> = (props) => {
             const pathname = window.location.pathname;
             // Разрешаем и '/' и '/xx' где xx - 2 буквы (локаль)
             const isHome =
-                pathname === '/' ||
-                (pathname.match(/^\/[a-zA-Z-]{2,5}$/) && pathname.split('/').length === 2);
+                pathname === '/' || (pathname.match(/^\/[a-zA-Z-]{2,5}$/) && pathname.split('/').length === 2);
 
             if (!isHome) {
                 // Перенаправляем на главную с якорем
@@ -58,4 +57,3 @@ export const SmoothScrollLink: FC<SmoothScrollLinkProps> = (props) => {
         </NextLink>
     );
 };
-

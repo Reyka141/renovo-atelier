@@ -18,12 +18,12 @@ export const AboutUs: FC<AboutUsProps> = (props) => {
                 max
                 gap="24"
                 align="center"
-                className="relative z-10 mx-auto max-w-[768px] px-2 text-center md:px-28 md:py-3 xl:px-16 xl:py-12 2xl:py-56"
+                className="relative z-10 mx-auto max-w-[780px] px-2 text-center md:px-28 md:py-3 xl:px-16 xl:py-12 2xl:py-56"
             >
                 <h3 className="font-secondary lg:text-h1 text-h1-mobile max-w-fit border-b border-black pb-3">
                     {t('title')}
                 </h3>
-                <p className="lg:text-body-desktop text-body-mobile">{t('description')}</p>
+                <p className="lg:text-body-desktop text-body-mobile text-balance">{t('description')}</p>
             </VStack>
             <Image
                 src={leftSideImg}

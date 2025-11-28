@@ -23,7 +23,7 @@ export const FeedbackCard: FC<FeedbackCardProps> = (props) => {
     const isMobile = useIsMobile();
     return (
         <div className={cn(className, 'flex flex-col-reverse justify-between gap-4 lg:flex-row lg:gap-16')}>
-            <div className="flex w-full min-w-[296px] items-center gap-3 md:gap-6">
+            <div className="flex min-w-[296px] items-center gap-3 md:gap-6">
                 <Image
                     src={item.image}
                     alt={item.name}
