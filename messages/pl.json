@@ -144,6 +144,79 @@
   },
   "Common": {
     "loading": "Ładowanie"
+  },
+  "PrivacyPolicy": {
+    "title": "Polityka prywatności",
+    "lastUpdated": "Ostatnia aktualizacja: 01.10.2025",
+    "intro": "Witamy na stronie Renovo Atelier. Szanujemy Twoją prywatność i staramy się przejrzyście wyjaśnić, jakie dane zbieramy, jak je wykorzystujemy i chronimy.",
+    "section1": {
+      "title": "1. Jakie dane zbieramy",
+      "description": "Możemy zbierać:",
+      "item1": "Dane osobowe, które sam podajesz (imię, email, numer telefonu, dane podane w formularzu kontaktowym).",
+      "item2": "Dane techniczne (adres IP, typ urządzenia, przeglądarka, system operacyjny, strony witryny, czas wizyty) — automatycznie poprzez pliki cookies i usługi analityczne.",
+      "item3": "Pliki, które przesyłasz przy składaniu wniosków, jeśli taka funkcja jest dostępna (np. zdjęcia odzieży do wyceny naprawy)."
+    },
+    "section2": {
+      "title": "2. Jak wykorzystujemy Twoje dane",
+      "description": "Twoje dane są wykorzystywane do:",
+      "item1": "przetwarzania zapytań i kontaktu z Tobą;",
+      "item2": "oszacowania kosztów i terminów usług naprawy lub szycia;",
+      "item3": "poprawy jakości strony internetowej i usług;",
+      "item4": "analityki, marketingu i personalizacji treści (tylko za Twoją zgodą, jeśli wymaga tego Twój region)."
+    },
+    "section3": {
+      "title": "3. Podstawy prawne przetwarzania",
+      "description": "Przetwarzamy dane osobowe na podstawie:",
+      "item1": "Twojej zgody;",
+      "item2": "konieczności wykonania umowy lub działań przedumownych (odpowiedzi na Twoje zapytania);",
+      "item3": "uzasadnionych interesów biznesowych (analityka, optymalizacja usług, bezpieczeństwo strony);",
+      "item4": "wymogów prawnych, jeśli mają zastosowanie."
+    },
+    "section4": {
+      "title": "4. Cookies i analityka",
+      "description1": "Używamy plików cookies do optymalizacji działania strony. Za ich pomocą możemy analizować ruch i sprawić, że strona będzie wygodniejsza. Żadna identyfikacja użytkownika nie odbywa się bez zgody, jeśli wymaga tego prawo Twojego kraju.",
+      "description2": "Możesz zarządzać plikami cookies w ustawieniach przeglądarki lub poprzez baner zgody na stronie."
+    },
+    "section5": {
+      "title": "5. Komu możemy udostępniać dane",
+      "description": "Nie sprzedajemy Twoich danych osobowych osobom trzecim. Możemy je przekazywać tylko:",
+      "item1": "partnerom, którzy pomagają nam świadczyć usługi lub zapewniają działanie strony (np. hosting, newslettery, analityka), pod warunkiem ścisłego przestrzegania zasad bezpieczeństwa;",
+      "item2": "organom państwowym — tylko na podstawie zgodnego z prawem żądania;",
+      "item3": "usługom przetwarzania płatności (jeśli na stronie dostępna jest płatność) — do realizacji transakcji finansowych."
+    },
+    "section6": {
+      "title": "6. Międzynarodowy transfer danych",
+      "description": "Jeśli dane są przekazywane poza UE, odbywa się to tylko do krajów lub usług, które zapewniają odpowiedni poziom ochrony danych, lub z wykorzystaniem zatwierdzonych mechanizmów transferu przewidzianych przez standardy międzynarodowe."
+    },
+    "section7": {
+      "title": "7. Jak chronimy dane",
+      "description": "Stosujemy techniczne i organizacyjne środki bezpieczeństwa:",
+      "item1": "szyfrowanie danych podczas transmisji (HTTPS);",
+      "item2": "ograniczony dostęp do danych;",
+      "item3": "regularne monitorowanie zagrożeń;",
+      "item4": "ochrona przed nieautoryzowanym dostępem i wyciekami."
+    },
+    "section8": {
+      "title": "8. Jak długo przechowujemy dane",
+      "description": "Przechowujemy dane osobowe:",
+      "item1": "tak długo, jak jest to konieczne do świadczenia usług i utrzymania kontaktu;",
+      "item2": "lub do momentu, gdy poprosisz o usunięcie danych, jeśli nie ma prawnego obowiązku ich przechowywania."
+    },
+    "section9": {
+      "title": "9. Twoje prawa",
+      "description": "Masz prawo do:",
+      "item1": "żądania kopii swoich danych;",
+      "item2": "żądania poprawienia niedokładnych danych;",
+      "item3": "wycofania zgody na przetwarzanie;",
+      "item4": "żądania usunięcia danych ('prawo do bycia zapomnianym');",
+      "item5": "ograniczenia przetwarzania danych;",
+      "item6": "złożenia skargi do organu nadzorczego ds. ochrony danych."
+    },
+    "section10": {
+      "title": "10. Kontakt",
+      "description": "Jeśli masz pytania dotyczące prywatności lub przetwarzania danych, skontaktuj się z nami za pomocą formularza kontaktowego na stronie lub oficjalnego adresu email."
+    },
+    "backToHome": "Powrót na stronę główną"
   }
 }
 

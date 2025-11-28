@@ -144,5 +144,78 @@
   },
   "Common": {
     "loading": "Loading"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: 01.10.2025",
+    "intro": "Welcome to the Renovo Atelier website. We respect your privacy and strive to transparently explain what data we collect, how we use it and how we protect it.",
+    "section1": {
+      "title": "1. What data we collect",
+      "description": "We may collect:",
+      "item1": "Personal data that you provide yourself (name, email, phone number, data specified in the contact form).",
+      "item2": "Technical data (IP address, device type, browser, operating system, site pages, visit time) — automatically through cookies and analytics services.",
+      "item3": "Files that you upload when submitting requests, if such functionality is available (for example, clothing images for repair assessment)."
+    },
+    "section2": {
+      "title": "2. How we use your data",
+      "description": "Your data is used for:",
+      "item1": "processing requests and contacting you;",
+      "item2": "estimating the cost and timeframes of repair or tailoring services;",
+      "item3": "improving the quality of the website and service;",
+      "item4": "analytics, marketing and content personalization (only with your consent, if required by your region)."
+    },
+    "section3": {
+      "title": "3. Legal basis for processing",
+      "description": "We process personal data based on:",
+      "item1": "your consent;",
+      "item2": "the necessity of contract execution or pre-contractual actions (responses to your requests);",
+      "item3": "legitimate business interests (analytics, service optimization, website security);",
+      "item4": "legal requirements, if applicable."
+    },
+    "section4": {
+      "title": "4. Cookies and analytics",
+      "description1": "We use cookies to optimize the website. With their help, we can analyze traffic and make the site more convenient. No user identification occurs without consent if required by the laws of your country.",
+      "description2": "You can manage cookies in your browser settings or through the consent banner on the website."
+    },
+    "section5": {
+      "title": "5. Who we may share data with",
+      "description": "We do not sell your personal data to third parties. We may only transfer it to:",
+      "item1": "partners who help us provide services or ensure the website operates (for example, hosting, email newsletters, analytics), subject to strict security compliance;",
+      "item2": "government authorities — only upon lawful request;",
+      "item3": "payment processing services (if payment is available on the site) — to perform financial transactions."
+    },
+    "section6": {
+      "title": "6. International data transfer",
+      "description": "If data is transferred outside the EU, it only occurs to countries or services that provide an adequate level of data protection, or using approved transfer mechanisms provided by international standards."
+    },
+    "section7": {
+      "title": "7. How we protect data",
+      "description": "We implement technical and organizational security measures:",
+      "item1": "data encryption during transmission (HTTPS);",
+      "item2": "restricted access to data;",
+      "item3": "regular threat monitoring;",
+      "item4": "protection against unauthorized access and leaks."
+    },
+    "section8": {
+      "title": "8. How long we store data",
+      "description": "We store personal data:",
+      "item1": "as long as necessary to provide the service and maintain communication;",
+      "item2": "or until you request data deletion, if there is no legal obligation to retain it."
+    },
+    "section9": {
+      "title": "9. Your rights",
+      "description": "You have the right to:",
+      "item1": "request a copy of your data;",
+      "item2": "request correction of inaccurate data;",
+      "item3": "withdraw consent to processing;",
+      "item4": "request data deletion ('right to be forgotten');",
+      "item5": "restrict data processing;",
+      "item6": "file a complaint with the data protection supervisory authority."
+    },
+    "section10": {
+      "title": "10. Contacts",
+      "description": "If you have questions about privacy or data processing, please contact us using the contact form on the website or the official contact email."
+    },
+    "backToHome": "Return to home"
   }
 }
