@@ -5,7 +5,7 @@
 // Настройки интернационализации
 export const I18N_CONFIG = {
     defaultLocale: 'en',
-    locales: ['en', 'ru'],
+    locales: ['en', 'ru', 'pl', 'uk'],
     fallbackLocale: 'en',
 } as const;
 

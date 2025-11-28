@@ -1,0 +1,148 @@
+{
+  "HomePage": {
+    "title": "Witamy w Renovo Atelier",
+    "description": "Aplikacja Next.js z internacjonalizacją",
+    "getStarted": "Zacznij od edycji",
+    "saveChanges": "Zapisz i natychmiast zobacz zmiany",
+    "deployNow": "Wdrożyć teraz",
+    "readDocs": "Przeczytaj naszą dokumentację",
+    "learnMore": "Dowiedz się więcej o Next.js",
+    "contactUs": "Skontaktuj się z nami",
+    "test": "asdasd"
+  },
+  "Navigation": {
+    "home": "Strona główna",
+    "about": "O nas",
+    "contact": "Kontakt"
+  },
+  "LanguageSwitcher": {
+    "language": "Język",
+    "english": "English",
+    "russian": "Русский",
+    "polish": "Polski",
+    "ukrainian": "Українська"
+  },
+  "Metadata": {
+    "title": "Renovo Atelier - Kreatywny Warsztat",
+    "description": "Nowoczesny warsztat dla kreatywnych projektów w Next.js"
+  },
+  "Header": {
+    "examples": "Przykłady",
+    "reviews": "Opinie",
+    "faq": "Odpowiedzi na pytania",
+    "contacts": "Kontakty",
+    "services": "Usługi",
+    "about": "O nas"
+  },
+  "Hero": {
+    "subtitle": "Dajemy nowe życie Twoim ubraniom"
+  },
+  "OurServices": {
+    "all": "Wszystkie usługi",
+    "Clothing Repair": "Naprawa odzieży",
+    "title": "Nasze usługi",
+    "Custom Tailoring": "Szycie na miarę",
+    "Alteration & Restoration": "Przeróbki i renowacja",
+    "Embroidery & Decor": "Haft i dekoracja",
+    "fromPrice": "od {price} zł",
+    "zipperReplacement": "Wymiana zamka",
+    "shorteningPantsSkirt": "Skracanie spodni/spódnicy",
+    "shorteningSleeves": "Skracanie rękawów",
+    "dressJacketFitting": "Dopasowanie sukienki/marynarki",
+    "repairHolesRips": "Naprawa dziur/rozdarć",
+    "skirtSewing": "Szycie spódnicy",
+    "simpleDressSewing": "Szycie prostej sukienki",
+    "mensShirtSewing": "Szycie koszuli męskiej",
+    "styleModernization": "Modernizacja fasonu",
+    "hardwareDecorReplacement": "Wymiana okuć/dekoracji",
+    "oldItemRedesign": "Przeróbka starej rzeczy",
+    "machineryEmbroidery": "Haft maszynowy",
+    "laceDecoration": "Dekoracja koronką",
+    "decorDecoration": "Dekoracja ozdobna",
+    "addedToBasket": "Produkt dodany do koszyka",
+    "goToBasket": "Przejdź do koszyka",
+    "anotherOffers": "Inne usługi"
+  },
+  "AboutUs": {
+    "title": "Renovo&atelier",
+    "description": "Jesteśmy warsztatem, gdzie każda rzecz dostaje drugą szansę i nowy oddech. Zależy nam nie tylko na tym, żeby podwinąć czy wymienić zamek, ale żeby ubrania znów cieszyły, wygodnie leżały i wyglądały godnie. Dbamy o szczegóły i szczerze kochamy swoją pracę — od napraw po szycie na miarę i hafty. Dla nas wartość rzeczy mierzy się historiami, które będzie dalej z Tobą przeżywać."
+  },
+  "FAQAnswers": {
+    "title1": "Jakie są terminy realizacji napraw i szycia?",
+    "answer1": "Termin zależy od złożoności: podstawowe naprawy (podwijanie, wymiana zamka, drobna renowacja) trwają zwykle od 1 do 3 dni, bardziej złożone przeróbki lub szycie na miarę — od 5 do 14 dni. Zawsze wcześniej uzgadniamy terminy i staramy się oddawać rzeczy wcześniej bez utraty jakości.",
+    "title2": "Czy pracujecie z drogimi i delikatnymi materiałami?",
+    "answer2": "Tak, pewnie pracujemy ze skórą, kaszmirem, jedwabiem i rzeczami z elementami dekoracyjnymi. Dla skomplikowanych materiałów stosujemy delikatne technologie i indywidualne podejście, aby zachować strukturę tkaniny i wygląd wyrobu.",
+    "title3": "Czy można dopasować rzecz dokładnie do figury?",
+    "answer3": "Oczywiście, dopasowanie do figury — to jedna z naszych mocnych stron. Uzgadniamy Twoje życzenia, wykonujemy dokładne pomiary i proponujemy rozwiązania, które będą wygodne w noszeniu i schludnie wyglądać z uwzględnieniem kroju rzeczy.",
+    "title": "Odpowiedzi na pytania"
+  },
+  "OurWork": {
+    "title": "Nasze prace"
+  },
+  "Feedback": {
+    "title": "Opinie",
+    "feedback1": {
+      "name": "Daria A.",
+      "date": "1 czerwca 2025",
+      "stars": "5",
+      "text": "Naprawa została wykonana idealnie — szwy równe, jak na nowej rzeczy. Mistrzowie naprawdę zwracają uwagę na szczegóły i nie oszczędzają na jakości. Odebrałam płaszcz przed terminem i teraz noszę z przyjemnością.",
+      "image": "/feedback/Feedback_1.jpg"
+    },
+    "feedback2": {
+      "name": "Anna B.",
+      "date": "10 września 2025",
+      "stars": "5",
+      "text": "«Najlepszy zakład krawiecki, w którym kiedykolwiek naprawiałam ubrania». Haft i wymiana zamka wykonane starannie, nawet nie widać, że była naprawa — wynik przekroczył oczekiwania. Polecam, jeśli szukacie niezawodności i ludzkiego podejścia.",
+      "image": "/feedback/Feedback_2.jpg"
+    },
+    "feedback3": {
+      "name": "Maria F.",
+      "date": "20 września 2025",
+      "stars": "5",
+      "text": "«Przeróbka starej sukienki — po prostu zachwyt, jakby uszyta od nowa». Zespół słucha klienta i daje szczere rady, jakie rozwiązania będą lepiej wyglądać i dłużej służyć. Dopasowanie stało się idealne do figury, teraz to moja ulubiona rzecz.",
+      "image": "/feedback/Feedback_3.jpg"
+    },
+    "feedback4": {
+      "name": "Alex M.",
+      "date": "1 października 2025",
+      "stars": "5",
+      "text": "«Powierzyłem im skórzaną kurtkę z przetarciami i skomplikowanym rozdarciu — zrobili jubilersko». Czuć profesjonalizm i miłość do rzemiosła. Kurtka wygląda lepiej niż przed naprawą, praca została wykonana szybko i z troską.",
+      "image": "/feedback/Feedback_4.jpg"
+    }
+  },
+  "Footer": {
+    "title": "Kontakty",
+    "name": "Imię",
+    "email": "E-mail",
+    "send": "Skontaktuj się z nami",
+    "privacyPolicy": "Wysyłając dane, zgadzasz się z naszą",
+    "privacyPolicyLink": "Polityką prywatności.",
+    "phone": "Numer telefonu",
+    "messageSentSuccessfully": "Otrzymaliśmy Twoje dane kontaktowe i skontaktujemy się wkrótce.",
+    "failedToSendMessage": "Wystąpił nieznany błąd, proszę spróbować ponownie."
+  },
+  "Basket": {
+    "title": "Koszyk",
+    "totalServices": "Razem usług: ({count})",
+    "clearAll": "Wyczyść wszystko",
+    "basketIsEmpty": "Koszyk jest pusty",
+    "name": "Imię",
+    "phone": "Numer telefonu",
+    "send": "Wyślij zamówienie",
+    "privacyPolicy": "Wysyłając dane, zgadzasz się z naszą",
+    "privacyPolicyLink": "Polityką prywatności.",
+    "orderTitle": "Realizacja:"
+  },
+  "SuccessSend": {
+    "backToHome": "Powrót na stronę główną",
+    "title": "Zgłoszenie wysłane pomyślnie!",
+    "description": "Dziękujemy za Twoje zapytanie! Otrzymaliśmy Twoje zgłoszenie i skontaktujemy się w ciągu 24 godzin, aby uzgodnić szczegóły i oszacować koszt usługi.",
+    "email": "renovoateliermail@gmail.com",
+    "phone": "+48 796 271 708",
+    "contactUs": "W pilnych sprawach"
+  },
+  "Common": {
+    "loading": "Ładowanie"
+  }
+}
+

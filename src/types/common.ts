@@ -27,7 +27,7 @@ export type ComponentSize = 'sm' | 'md' | 'lg';
 export type ComponentVariant = 'primary' | 'secondary' | 'danger' | 'success' | 'warning' | 'info';
 
 // Локали
-export type Locale = 'en' | 'ru';
+export type Locale = 'en' | 'ru' | 'pl' | 'uk';
 
 // Цветовые темы
 export type Theme = 'light' | 'dark';

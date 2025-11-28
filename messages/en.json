@@ -18,7 +18,9 @@
   "LanguageSwitcher": {
     "language": "Language",
     "english": "English",
-    "russian": "Русский"
+    "russian": "Русский",
+    "polish": "Polski",
+    "ukrainian": "Українська"
   },
   "Metadata": {
     "title": "Renovo Atelier - Creative Workshop",
