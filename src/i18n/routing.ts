@@ -6,4 +6,10 @@ export const routing = defineRouting({
 
     // Локаль по умолчанию, используется когда язык не соответствует
     defaultLocale: 'en',
+
+    // Включить автоматическое определение языка браузера
+    localeDetection: true,
+
+    // Префикс локали в URL (always - всегда показывать, as-needed - скрывать для defaultLocale)
+    localePrefix: 'always',
 });

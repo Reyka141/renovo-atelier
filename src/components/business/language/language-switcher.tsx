@@ -35,6 +35,9 @@ export function LanguageSwitcher({
     const currentLanguage = languageOptions.find((lang) => lang.code === locale);
 
     const handleLanguageChange = (langCode: string) => {
+        // Сохраняем выбор пользователя в cookie (используется next-intl middleware)
+        document.cookie = `NEXT_LOCALE=${langCode}; path=/; max-age=31536000; SameSite=Lax`;
+
         // Используем типизированный роутер из next-intl
         router.push(pathname, { locale: langCode });
         setIsOpen(false);
