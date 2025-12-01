@@ -1,36 +1,184 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="public/header/logo-black.svg" alt="Renovo Atelier Logo" width="200"/>
+  
+  # Renovo Atelier
+  
+  **Professional website for a clothing repair and tailoring atelier**
+  
+  [![Next.js](https://img.shields.io/badge/Next.js-15.4-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+  [![React](https://img.shields.io/badge/React-19.1-61DAFB?style=flat-square&logo=react)](https://react.dev/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+  
+  [🌐 Demo](https://renovo-atelier.vercel.app) • [📋 Features](#-features) • [🛠 Tech Stack](#-tech-stack)
+</div>
 
-## Getting Started
+---
 
-First, run the development server:
+## 📖 About
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Renovo Atelier** — a modern multilingual website for an atelier specializing in clothing repair, tailoring, and restoration. The project is built with a focus on performance, SEO optimization, and user experience.
+
+### 🎯 Key Highlights
+
+- **🚀 High Performance** — built on Next.js 15 with App Router and React Server Components
+- **🌍 4 Languages** — full localization in English, Polish, Russian, and Ukrainian
+- **📱 Responsive Design** — perfect display on all devices
+- **🔍 SEO Optimized** — sitemap, robots.txt, Open Graph meta tags
+- **♿ Accessibility** — semantic markup and keyboard navigation support
+
+---
+
+## ✨ Features
+
+| Section          | Description                                         |
+| ---------------- | --------------------------------------------------- |
+| 🏠 **Hero**      | Attractive landing screen with call-to-action       |
+| 🛠 **Services**  | Service catalog with prices and add-to-cart feature |
+| 📸 **Portfolio** | Gallery of completed works with slider              |
+| 👥 **About Us**  | Information about the atelier and team              |
+| ⭐ **Reviews**   | Customer reviews with slider                        |
+| ❓ **FAQ**       | Answers to frequently asked questions (accordion)   |
+| 📬 **Contacts**  | Contact form with validation                        |
+| 🛒 **Cart**      | Service cart with order checkout                    |
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+| Technology       | Version | Purpose                      |
+| ---------------- | ------- | ---------------------------- |
+| **Next.js**      | 15.4    | React framework with SSR/SSG |
+| **React**        | 19.1    | UI library                   |
+| **TypeScript**   | 5.x     | Type safety                  |
+| **Tailwind CSS** | 4.x     | Utility-first CSS framework  |
+
+### State & Data Management
+
+| Technology    | Purpose                     |
+| ------------- | --------------------------- |
+| **Zustand**   | Global state (cart)         |
+| **next-intl** | Internationalization (i18n) |
+
+### Forms & Validation
+
+| Technology              | Purpose                   |
+| ----------------------- | ------------------------- |
+| **Formik**              | Form management           |
+| **Yup**                 | Schema validation         |
+| **react-phone-input-2** | International phone input |
+
+### UI Components
+
+| Technology         | Purpose                  |
+| ------------------ | ------------------------ |
+| **Headless UI**    | Accessible UI primitives |
+| **Swiper**         | Sliders and carousels    |
+| **react-toastify** | Notifications            |
+
+### Integrations
+
+| Technology           | Purpose                  |
+| -------------------- | ------------------------ |
+| **EmailJS**          | Serverless form handling |
+| **Vercel Analytics** | Traffic analytics        |
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   └── [locale]/           # Dynamic locale routing
+├── components/
+│   ├── business/           # Business components (Header, Footer, Services...)
+│   └── ui/                 # UI components (Button, Input, Link...)
+├── hooks/                  # Custom React hooks
+├── stores/                 # Zustand stores
+├── i18n/                   # Localization config
+├── constants/              # App constants
+├── types/                  # TypeScript types
+└── utils/                  # Utilities
+
+messages/                   # Translation files (en, pl, ru, uk)
+public/                     # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Requirements
 
-## Learn More
+- Node.js 18.x or higher
+- npm / yarn / pnpm
 
-To learn more about Next.js, take a look at the following resources:
+### Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Clone the repository
+git clone https://github.com/your-username/renovo-atelier.git
+cd renovo-atelier
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Install dependencies
+npm install
 
-## Deploy on Vercel
+# Start development server
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Available Scripts
+
+| Command          | Description          |
+| ---------------- | -------------------- |
+| `npm run dev`    | Start dev server     |
+| `npm run build`  | Build for production |
+| `npm run start`  | Run production build |
+| `npm run lint`   | Run ESLint           |
+| `npm run format` | Format with Prettier |
+
+---
+
+## 🌐 Localization
+
+The project supports 4 languages:
+
+| Code | Language   | File               |
+| ---- | ---------- | ------------------ |
+| `en` | English    | `messages/en.json` |
+| `pl` | Polski     | `messages/pl.json` |
+| `ru` | Русский    | `messages/ru.json` |
+| `uk` | Українська | `messages/uk.json` |
+
+To add a new language:
+
+1. Create a file `messages/{code}.json`
+2. Add the locale code to the `src/i18n/` configuration
+
+---
+
+## 📊 Performance
+
+The project is optimized for high Lighthouse scores:
+
+- ⚡ **Performance** — image optimization via `next/image`
+- 🔍 **SEO** — auto-generated sitemap.xml and robots.txt
+- ♿ **Accessibility** — semantic HTML markup
+- 📱 **Best Practices** — modern web standards
+
+---
+
+## 📄 License
+
+This project is private and protected by copyright.
+
+---
+
+<div align="center">
+  <sub>Made with ❤️ for Renovo Atelier</sub>
+</div>
