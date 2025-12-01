@@ -10,7 +10,7 @@
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
   
-  [🌐 Demo](https://renovo-atelier.vercel.app) • [📋 Features](#-features) • [🛠 Tech Stack](#-tech-stack)
+  [🌐 Demo](https://app-renovo-atelier.vercel.app/) • [📋 Features](#-features) • [🛠 Tech Stack](#-tech-stack)
 </div>
 
 ---
